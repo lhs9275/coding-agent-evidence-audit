@@ -17,10 +17,10 @@ th { background: #eef1f4; }
 tr { break-inside: avoid; }
 blockquote { border-left: 3px solid #bbb; padding-left: 4mm; color: #444; margin-left: 0; }
 </style><body><h1>Paper A: 코딩 에이전트 비교 결과의 공개 증거 연결성 감사</h1>
-<p><strong>기술보고서 · 공개 아카이브판 · 2026-10-26</strong><br />
+<p><strong>기술보고서 · 공개 아카이브판 · 2026-10-26 · 문서 개정 v1.0.1</strong><br />
 <strong>영문 제목:</strong> Paper A: An Archival Technical Report on Evidence Linkage in Coding-Agent Comparisons</p>
 <h2>초록</h2>
-<p>논문에 보고된 수치를 다시 계산하는 일과, 계산에 사용한 공개 기록이 원래 보고된 수치의 근거임을 확인하는 일은 다르다. Paper A는 코딩 에이전트 비교 연구의 공개 자료에서 이 연결을 확인하는 감사 절차를 개발했다. 이 기술보고서는 프로젝트 백업에서 보존된 판정 데이터, 감사 규칙, 분석 도구와 원고를 설명한다. 검토 단위는 연구, 비교 결정, 증거 요구 항목으로 구분하며, 공개 파일의 존재를 원래 실행의 식별로 간주하지 않는다. 공개 패키지는 결과 유형별 후보를 사용하는 v2 재판정 기록의 규칙 적합성과 민감도 분석을 오프라인으로 검사할 수 있도록 구성했다. 원래 에이전트를 다시 실행하거나 전체 원자료를 재획득한 결과는 아니다. 원고의 성과 주장을 강화하기보다, 확인된 결과와 확인하지 못한 연결을 구분하여 후속 사용자가 자료를 해석할 수 있게 하는 데 목적이 있다.</p>
+<p>논문에 보고된 수치를 다시 계산하는 일과, 계산에 사용한 공개 기록이 원래 보고된 수치의 근거임을 확인하는 일은 다르다. Paper A는 코딩 에이전트 비교 연구의 공개 자료에서 이 연결을 확인하는 감사 절차를 개발했다. 이 기술보고서는 프로젝트 백업에서 보존된 판정 데이터, 감사 규칙, 분석 도구와 원고를 설명한다. 검토 단위는 연구, 비교 결정, 증거 요구 항목으로 구분하며, 공개 파일의 존재를 원래 실행의 식별로 간주하지 않는다. 공개 패키지는 결과 유형별 후보를 사용하는 v2 재판정 기록의 규칙 적합성과 민감도 분석을 오프라인으로 검사할 수 있도록 구성했다. 보존된 네 연구·다섯 조건 집단의 비교 결정 20건은 결과 유형별 v2 기준에서 모두 <code>UNIDENTIFIED</code>였다. 사후 민감도 분석에서도 식별된 결정은 없었지만, 일부 조건을 제거하면 후보 미열거 상태에서 후보 비유일 상태로 바뀌었다. 이 결과는 원 연구의 오류나 분야 전체의 재현 실패율을 뜻하지 않는다. 원래 에이전트를 다시 실행하거나 전체 원자료를 재획득한 결과는 아니다. 원고의 성과 주장을 강화하기보다, 확인된 결과와 확인하지 못한 연결을 구분하여 후속 사용자가 자료를 해석할 수 있게 하는 데 목적이 있다.</p>
 <h2>1. 문서의 목적과 상태</h2>
 <p>이 문서는 Paper A의 방법과 자산을 공개하기 위한 기술보고서다. 연구가 다룬 질문, 데이터의 의미, 판정 절차, 실제로 다시 계산할 수 있는 항목과 남은 한계를 함께 기록한다. 성능 개선 기법의 제안이나 새로운 저널 투고를 위한 실험 확대는 이 문서의 범위에 포함하지 않는다.</p>
 <p>프로젝트의 원래 질문은 평가 프로토콜의 차이가 공개된 코딩 에이전트 비교 결론을 바꾸는지였다. 이 질문에 답하려면 먼저 원래 비교에 사용된 실행 자료와 평가 설정을 식별해야 한다. Paper A의 보존 자료는 이 선행 조건을 별도로 감사한다. 원래 실행을 식별할 수 없다는 판정은 에이전트의 성능이 낮다는 뜻이 아니며, 프로토콜을 바꿨을 때 결론이 뒤집힌다는 증거도 아니다.</p>
@@ -35,6 +35,48 @@ blockquote { border-left: 3px solid #bbb; padding-left: 4mm; color: #444; margin
 </ol>
 <p>보존된 핵심 감사 프레임은 네 연구, 다섯 조건 집단의 비교 결정 20건이다. 증거 요구 항목 206건은 이 결정들에 중첩된다. 네 연구, 20건의 결정, 206건의 요구 항목을 서로 독립적인 표본 수처럼 합치거나 해석해서는 안 된다. 이와 별도로 구성된 47건의 문헌 발견 코호트도 완전한 문헌 모집단을 뜻하지 않는다.[D1, D2, M1]</p>
 <p>네 심층 감사 연구는 앞선 프로젝트에서 물려받은 사례들이다. 보존 원고는 당시 선정 규칙을 재구성할 수 없다고 기록하며, 이후 구성한 발견 코호트에서 무작위로 뽑았거나 결과를 보지 않고 독립 선정한 표본으로 기술하지 않는다. 문헌 발견 단계의 판정도 사람 평가를 그대로 재현한 절차가 아니라 LLM 판정으로 대체한 이력이 있다. 따라서 이 기술보고서는 네 연구에 관한 자료를 설명하며 분야 전체의 재현성 비율을 추정하지 않는다.[M1]</p>
+<p>보존 판정 기록의 사례 구성은 다음과 같다. 조건 집단별 결정 수는 표본의 대표성이나 연구별 중요도를 나타내지 않는다.[D2]</p>
+<table>
+<thead>
+<tr>
+<th>연구</th>
+<th>조건 집단</th>
+<th style="text-align: right;">비교 결정 수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SWE-agent</td>
+<td><code>SWEAGENT</code></td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>SWE-Gym</td>
+<td><code>SWEGYM_OPENHANDS</code></td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>SWE-Gym</td>
+<td><code>SWEGYM_MOATLESS</code></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>Agentless</td>
+<td><code>AGENTLESS</code></td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>AutoCodeRover</td>
+<td><code>AUTOCODEROVER</code></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>합계: 4개 연구</td>
+<td>5개 조건 집단</td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
 <p>이 공개본은 당시 결론을 새로운 데이터로 재추정하지 않는다. 프로젝트 기록의 정합성을 검사하고, 독자가 같은 자료에서 동일한 판정 집계와 민감도 결과를 얻을 수 있는 경로를 제공한다.</p>
 <h2>3. 감사 대상: 수치와 실행 증거를 연결하는 다섯 요소</h2>
 <p>한 파일의 존재만으로 원래 실행을 식별했다고 판단하지 않는다. 감사는 다음 다섯 요소를 분리한다.[D1]</p>
@@ -212,9 +254,105 @@ blockquote { border-left: 3px solid #bbb; padding-left: 4mm; color: #444; margin
 </table>
 <p>이 집계는 기록된 판정의 요약이다. 새롭게 독립 판정자를 투입해 원래 증거를 다시 코딩한 결과는 아니다. 기록된 판정이 허용된 규칙을 따르는지 확인하는 것과, 원래 판단이 사실적으로 옳은지 독립 검증하는 것은 별개의 작업이다.</p>
 <p>계획했던 두 번째 단계의 계층별 호환성 분석은 실행하지 않았다. 따라서 이 공개본에는 프로토콜 이전 실행의 시도 가능성이나 계층별 호환성 결과가 없다. 과거 체크포인트의 <code>NOT ATTEMPTABLE</code> 및 0/20 이전 실행 결론은 철회된 기록이다. 이전 v1의 18건 <code>UNIDENTIFIED</code>와 2건 <code>COMPATIBILITY_NOT_EVALUATED</code> 집계도 현재 v2 결과를 대신하지 않는다.[D4, M1]</p>
+<h3>5.1 보존 판정 사례: SWE-agent의 CMP-001</h3>
+<p><code>CMP-001</code>은 기계 테스트 기반 해결률(<code>MACHINE_RESOLUTION_RATE</code>)에 관한 결정이다. 보존 기록의 후보 수와 결손 근거는 다음과 같다. 여기서 후보 수는 조사된 기록에서 열거한 수이며 실제 존재하는 모든 자료의 수가 아니다.[D2]</p>
+<table>
+<thead>
+<tr>
+<th>요소</th>
+<th style="text-align: right;">후보 수</th>
+<th>보존 기록의 근거</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>릴리스 집합</td>
+<td style="text-align: right;">0</td>
+<td>코드 스냅샷 등 부분 증거는 있으나 해당 결정에 맞는 릴리스 후보가 열거되지 않음</td>
+</tr>
+<tr>
+<td>실행 출력 집합</td>
+<td style="text-align: right;">0</td>
+<td>필요한 패치 산출물과 평가 결과를 갖춘 출력 묶음 후보가 열거되지 않음</td>
+</tr>
+<tr>
+<td>평가자·설정</td>
+<td style="text-align: right;">1</td>
+<td>보충 자료의 <code>evaluation.py</code>와 <code>run_eval.sh</code> 조합</td>
+</tr>
+<tr>
+<td>과제 집합</td>
+<td style="text-align: right;">1</td>
+<td>해시로 기록한 2,294개 과제 ID 집합; 후보 세계는 열려 있음</td>
+</tr>
+<tr>
+<td>집계 규칙</td>
+<td style="text-align: right;">0</td>
+<td>예정 시도 수, 실행 선택, 시스템 간 짝짓기를 포함하는 완전한 규칙 후보가 없음</td>
+</tr>
+</tbody>
+</table>
+<p>평가자와 과제 집합에 후보가 있다는 사실만으로 원래 실행이 식별되지는 않는다. 세 요소에서 후보를 열거하지 못했으므로 현재 판정은 <code>UNIDENTIFIED</code>다. 호환성 평가는 <code>NOT_APPLICABLE_MISSING_COMPONENT</code>이며 허용 조합 수는 <code>null</code>이다. 이는 모든 조합을 검사해 허용 조합이 0개임을 확인한 결과와 다르다. 이 사례는 기존 기록을 풀어 설명한 것이며 새 독립 판정이나 원자료 재조사가 아니다.</p>
 <h2>6. 민감도 분석과 해석 범위</h2>
-<p>민감도 사다리는 새로운 증거를 넣지 않고 식별 요구 조건을 완화한다. 후보 세계의 폐쇄, 집계 규칙, 평가자·설정, 릴리스 집합 등의 요구를 순차적으로 제거한 뒤 같은 결정들을 다시 평가한다. 마지막 가용성 단계는 식별과 별도로 모든 요소에 후보가 존재하는지만 묻는다.[D3]</p>
+<p>민감도 사다리는 새로운 증거를 넣지 않고 식별 요구 조건을 완화한다. 후보 세계의 폐쇄, 집계 규칙, 평가자·설정, 릴리스 집합 등의 요구를 순차적으로 제거한 뒤 같은 결정들을 다시 평가한다. R0–R4는 요구 조건을 누적하여 제거한다. R5는 그 연장선이 아니라 다섯 요소를 모두 복원하고 유일성 요구를 제거하는 별도의 가용성 비교다. R5는 모든 요소에 후보가 존재하는지만 묻는다.[D3]</p>
 <p>이 분석은 모든 결과를 본 뒤 설계한 <strong>사후 분석</strong>으로 기록돼 있다. 사전등록된 확증 분석으로 바꾸어 부르지 않는다. 완화한 조건에서 판정이 달라지면 어떤 요구 조건에 결과가 민감한지 설명할 수 있다. 판정이 달라지지 않아도 다른 자료나 다른 연구에 대한 보편적 불가능성이 증명되는 것은 아니다.</p>
+<p>보존된 v2 JSON과 동일하게 재계산된 단계별 집계는 다음과 같다.[D3]</p>
+<table>
+<thead>
+<tr>
+<th>단계</th>
+<th>요구 조건 변경</th>
+<th style="text-align: right;"><code>UNIDENTIFIED</code></th>
+<th style="text-align: right;"><code>NOT_UNIQUE</code></th>
+<th style="text-align: right;">식별 또는 가용 판정 수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R0</td>
+<td>현재 판정 기준 유지</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>R1</td>
+<td>후보 세계의 폐쇄 요구 제거</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>R2</td>
+<td>추가로 집계 규칙 요구 제거</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>R3</td>
+<td>추가로 평가자·설정 요구 제거</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>R4</td>
+<td>추가로 릴리스 집합 요구 제거</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>R5</td>
+<td>별도 비교: 다섯 요소 복원, 유일성 요구 제거</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<p>R3에서 <code>CMP-034</code>가, R4에서 추가로 <code>CMP-012</code>와 <code>CMP-013</code>이 <code>NOT_UNIQUE</code>가 된다. 이 상태는 남겨 둔 요소의 열거 후보만으로 하나를 고를 수 없음을 뜻한다. 완화된 요소 조합에 대한 별도 호환성 검사는 실행하지 않았으므로, 호환성 검사를 완료한 원래 판정 상태 <code>AMBIGUOUS</code>와 같지 않다. 요구 조건을 제거한 후에도 식별된 결정은 없지만, 모든 단계에서 모든 결정의 상태가 그대로였다고 요약해서도 안 된다.</p>
 <h2>7. 오프라인 재현 방법</h2>
 <p>공개 패키지의 기본 검사는 Python 표준 라이브러리만 사용한다. 저장소 최상위에서 실행한다.</p>
 <pre><code class="language-bash">python3 tools/joint_identifiability.py \
@@ -244,6 +382,10 @@ python3 -m pytest -q tests
 <h2>10. 작성·윤리·지원에 관한 고지</h2>
 <p>이 문서는 기존 연구 자료를 정리한 AI 보조 기술보고서다. 코드 실행과 파일 점검으로 확인한 범위를 문서화했으며, 새 독립 동료심사나 저널 게재를 뜻하지 않는다. 보존 원고의 저자 표기는 유지하되, 이 작업에서 저자별 CRediT 기여 배분을 새로 확정하지 않았다.</p>
 <p>이번 공개 작업에서는 새 사람 대상 연구나 새 수작업 평가를 수행하지 않았다. 원 연구의 연구비, 이해관계, 기관 윤리 판단에 대한 새 확인도 수행하지 않았다. 확인하지 못한 항목을 '없음'으로 기재하지 않는다. 이 문서의 문서화·계산 점검과 원 연구의 실험 기여는 구분한다.</p>
+<h2>11. 결론과 공개 자료 설계에 대한 시사점</h2>
+<p>이 아카이브의 기여는 보존된 비교 결정에 대해 파일 가용성, 결과의 수치 일치, 역사적 실행의 식별을 구분하고 그 판정 규칙과 입력 기록을 함께 공개한 데 있다. 현재 v2 기록의 20건은 모두 <code>UNIDENTIFIED</code>이며, 이는 조사 범위에서 결과 유형에 맞는 필수 요소 후보를 하나 이상 열거하지 못했다는 뜻이다. 원 연구의 성능 주장을 반증하거나 평가 프로토콜 이전의 불가능성을 입증한 결과는 아니다.</p>
+<p>후속 연구의 공개 자료는 보고값별로 릴리스의 불변 식별자, 실행 출력 목록, 정확한 과제 ID 집합, 평가자·설정, 집계 규칙을 연결해야 한다. 집계 규칙에는 실행 선택, 반복 처리, 누락 처리와 분모를 포함해야 한다. 사람이 의미적 정답을 평가한 결과라면 최종 라벨과 평가 기준·절차도 연결해야 한다. 이러한 대응표는 독자가 같은 수치를 계산하는 데서 나아가 어떤 기록이 그 수치의 근거인지 확인하는 출발점이 된다.</p>
+<p>원래 질문인 평가 프로토콜 이전에 따른 비교 결론 변화는 미해결로 남는다. 이를 다시 조사하려면 연결된 증거를 보강하고, 독립적인 증거 재판정과 실제 호환성·이전 실행을 별도로 수행해야 한다.</p>
 <h2>자료 참조</h2>
 <ul>
 <li><strong>[D1]</strong> <a href="docs/paper-a/joint-identifiability-protocol-v2.md">현재 v2 식별 판정 프로토콜</a>.</li>
