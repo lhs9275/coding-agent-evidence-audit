@@ -1,0 +1,168 @@
+{
+  "counts": {
+    "COMPATIBILITY_NOT_EVALUATED->UNIDENTIFIED": 2,
+    "UNIDENTIFIED->UNIDENTIFIED": 18
+  },
+  "from_protocol_sha256": "13486bd361a757647c7da7f0a14f223e9bfd59e69d246963162010dacd062c23",
+  "from_record": {
+    "path": "identifiability-verdicts-v1.json",
+    "sha256": "2c40be4600a5e2058d407498d9d054989273ac5b400992d6e479e249a8b27157",
+    "status": "HISTORICAL_SUPERSEDED"
+  },
+  "from_verdicts_sha256": "2c40be4600a5e2058d407498d9d054989273ac5b400992d6e479e249a8b27157",
+  "legacy_record_statuses": [
+    {
+      "path": "compatibility-filter-v1.json",
+      "sha256": "b800faa418a8e53547ebf3a66cb4171d9cf508e62d2f14ec9e9de8f2b6b5cd2a",
+      "status": "HISTORICAL_SUPERSEDED"
+    },
+    {
+      "path": "compatibility-judgement-v1.json",
+      "sha256": "03f756900d030b6133ef3538e445d552fbd4ed358cd3e287da5aa71ebf68b808",
+      "status": "WITHDRAWN_NOT_CURRENT_SCIENTIFIC_RESULT"
+    },
+    {
+      "path": "rq2-transfer-judgement-v1.json",
+      "sha256": "12310a3ceb77534d361c96d0b7bb282e9a9e7dec37c98bf02933bbe5a7ad6a48",
+      "status": "WITHDRAWN_NOT_CURRENT_SCIENTIFIC_RESULT"
+    },
+    {
+      "path": "sensitivity-ladder-v1.json",
+      "sha256": "1374f55b87a7b71f4ecaaabed17d80c9b7860e900e5fb4eac2e33f065934a82a",
+      "status": "HISTORICAL_SUPERSEDED"
+    }
+  ],
+  "reason": "v2 outcome-specific candidate enumeration and source-independent binding",
+  "retained_input_corrections": [
+    {
+      "corrections": [
+        {
+          "canonical_evidence": [
+            "CLM-0093",
+            "CLM-0094",
+            "CON-008",
+            "CON-009"
+          ],
+          "current_reading": "The source reports three repetitions and cited-standard Pass@1; public raw contrasts are new {9,12} and old {11,13,14}, but no public run/evaluator is source-bound and result agreement never selects a candidate.",
+          "json_pointer": "/condition_groups/4/kinds/ANALYSIS_BINDING/evidence"
+        },
+        {
+          "canonical_evidence": [
+            "CLM-0095",
+            "CLM-0096"
+          ],
+          "current_reading": "CMP-035 reports 51 of 78 tasks, not patches; no public task-level final human semantic-label vector is present.",
+          "json_pointer": "/condition_groups/4/kinds/HUMAN_LABEL/evidence"
+        }
+      ],
+      "path": "availability-closure-classes-v1.json",
+      "sha256": "38a6f3eff403ac465354eab3715600b1c35204d4591d2ff262ca1ee57e448916",
+      "status": "RETAINED_INPUT_WITH_CORRECTED_INTERPRETATION"
+    }
+  ],
+  "rows": [
+    {
+      "decision_id": "CMP-001",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-002",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-003",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-004",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-006",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-007",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-008",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-009",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-010",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-011",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-012",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-013",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-018",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-019",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-021",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-022",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-024",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    },
+    {
+      "decision_id": "CMP-034",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "COMPATIBILITY_NOT_EVALUATED"
+    },
+    {
+      "decision_id": "CMP-035",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "COMPATIBILITY_NOT_EVALUATED"
+    },
+    {
+      "decision_id": "CMP-041",
+      "new_state": "UNIDENTIFIED",
+      "old_state": "UNIDENTIFIED"
+    }
+  ],
+  "schema": "identifiability-transition.v1-to-v2",
+  "to_protocol_sha256": "b594f7e8ca919972daff33f2a307c6687641655da6ae1bacf6479a6b18fade68",
+  "to_verdicts_sha256": "000e078994c73940172338f8b56598e7d086a9312124f7837260521b6e908c60"
+}

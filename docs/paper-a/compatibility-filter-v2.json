@@ -1,0 +1,16 @@
+{
+  "analysis_timing": "POST_HOC_AFTER_DEFECT_DISCOVERY",
+  "combination_limit": 200000,
+  "constraint_numbers": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "decisions": [],
+  "protocol_sha256": "b594f7e8ca919972daff33f2a307c6687641655da6ae1bacf6479a6b18fade68",
+  "reported_values_consulted": false,
+  "schema": "compatibility-filter.v2",
+  "source_verdicts": "identifiability-verdicts-v2.json",
+  "verdicts_sha256": "000e078994c73940172338f8b56598e7d086a9312124f7837260521b6e908c60"
+}

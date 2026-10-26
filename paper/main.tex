@@ -1,0 +1,121 @@
+%% TOSEM submission. ACM journals use acmart with the acmsmall option; `sigconf` is the
+%% conference layout and would be wrong here.
+\documentclass[acmsmall,screen,review,anonymous]{acmart}
+
+\usepackage{booktabs}
+\usepackage{siunitx}
+
+%% Anonymous review: acmart suppresses the author block when `anonymous` is set. The
+%% option is removed for the camera-ready, not the author data.
+\settopmatter{printacmref=false}
+\setcopyright{none}
+\acmJournal{TOSEM}
+\acmYear{2026}
+
+\begin{document}
+
+\title{Reported and Recoverable Are Different Properties:
+A Decision-Level Reproduction Audit of Four Coding-Agent Comparison Studies}
+
+%% Author data stays in the source and acmart's `anonymous` option suppresses it for
+%% review. Removing the names for submission and re-adding them for camera-ready is how
+%% names get lost; removing the option is not.
+\author{Hyunsoo Lee}
+\affiliation{%
+  \institution{Hankyong National University}
+  \city{Anseong}
+  \country{Republic of Korea}}
+\email{selab.hknu@gmail.com}
+
+%% No email of record for the second author; the field is left out rather than guessed.
+\author{Geunseok Yang}
+\affiliation{%
+  \institution{Hankyong National University}
+  \city{Anseong}
+  \country{Republic of Korea}}
+
+\begin{abstract}
+A published coding-agent comparison reports numbers; its artifact contains bytes. We audit
+the join between them. This is a four-study, twenty-decision, protocolized audit: a codebook
+fixed before any availability lookup was operationalized into a vector of 206 recorded
+evidence requirements, and we retrieve 2.8\,GB of released artifacts. The released-byte
+checks are deliberately bounded: exact task-manifest equality for SWE-agent, resolved/empty
+arithmetic for a selected SWE-Gym Moatless subset, the Agentless generation archive, and
+AutoCodeRover run-report and candidate arithmetic. We do not claim full recomputation
+for every study. The 20 comparison decisions are nested within the four studies, and the 206
+requirements are nested within the decisions; none of these counts is a sample size.
+
+Under a criterion whose rule identity is recorded by digest -- can a reproducer determine
+the release set, run-output set, evaluator and configuration, task universe and aggregation
+rule behind a reported figure, without picking the candidate whose value matches it? -- the
+outcome-specific v2 re-adjudication classifies all 20 decisions as \textsc{unidentified}.
+None is \textsc{identified} or \textsc{compatibility not evaluated}, and all five condition
+groups across the four studies are \textsc{not identified}. \textsc{Unidentified} means that
+the public record exposes no candidate for at least one outcome-specific component, not that
+the object never existed.
+The planned tier-two, per-class compatibility analysis was not run, so the paper reports no
+transfer-attemptability or per-class compatibility result.
+
+The bounded checks surface what neither source nor artifact shows alone. AutoCodeRover's
+source reports three repetitions of its base configuration, cites the standard $k=1$ estimator,
+and annotates two of its three printed Lite figures accordingly -- 19.00\% (57) at @1 and
+26.00\% (78) at @3 -- while ACR-sbfl at 22.00\% (66) carries no run-count annotation and no
+stated run count anywhere. Its public run-output reports expose base-run triples of
+54/57/57 under the new evaluation and 48/47/50 under the old, with corresponding ACR-sbfl
+counts of 66 and 61. The 9--14 range comprises raw per-repetition contrasts; applying the
+cited estimator to complete triples gives source-unbound differences of 10 and $38/3$.
+Because the source supplies neither a public-bundle binding nor the complete selection/count
+presentation transform, the arithmetic selects no effect and does not change the verdict.
+
+The four studies were inherited rather than sampled, so we make no representativeness claim.
+Around them we re-derive a bounded discovery cohort: the inherited frame is a property of a
+search in which seven of eighteen channels returned an error before a result page, and
+re-running discovery under a protocol frozen before outcome coding yields a roster of 47.
+That roster is a non-exhaustive, protocol-defined discovery cohort, not an enumeration of
+the eligible literature; we report its provenance, its disposition flow, and a component
+exposure screen over its deposits, none of it as a prevalence estimate.
+The target specification these verdicts are conditional on was itself re-derived blind by two
+model axes with no access to this project's records; on the fourteen decisions they could
+bind, twelve agree that the released evidence does not identify the reported point estimate,
+and three cells in our own record were found to name more than one compared quantity.
+Reportability and recoverability are independent properties, and separating them requires
+matching each evidence operation and claim to what the public record actually supports.
+\end{abstract}
+
+\begin{CCSXML}
+<ccs2012>
+<concept>
+<concept_id>10011007.10011074.10011099</concept_id>
+<concept_desc>Software and its engineering~Software verification and validation</concept_desc>
+<concept_significance>500</concept_significance>
+</concept>
+<concept>
+<concept_id>10011007.10011074.10011134</concept_id>
+<concept_desc>Software and its engineering~Software development process management</concept_desc>
+<concept_significance>300</concept_significance>
+</concept>
+</ccs2012>
+\end{CCSXML}
+\ccsdesc[500]{Software and its engineering~Software verification and validation}
+\ccsdesc[300]{Software and its engineering~Software development process management}
+
+\keywords{coding agents, reproduction, evaluation protocols, research artifacts}
+
+\maketitle
+
+\input{sections/introduction}
+\input{sections/background}
+\input{sections/relatedwork}
+\input{sections/method}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/threats}
+\input{sections/conclusion}
+
+%% The 47 studies are this paper's object of study, so all of them appear in the
+%% bibliography whether or not the prose names them individually.
+\nocite{*}
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\end{document}

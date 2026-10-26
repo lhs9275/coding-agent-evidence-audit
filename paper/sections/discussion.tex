@@ -1,0 +1,74 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Identification requires an outcome-specific evidence chain}
+
+The outcome-specific v2 re-adjudication assigns all 20 decisions \textsc{unidentified}; none
+is \textsc{identified} or \textsc{compatibility not evaluated}, and all five condition groups
+across the four studies are \textsc{not identified}. This result does not establish one
+universal missing field, nor does it show that adding one sentence would make a comparison
+reproducible or transferable. Each decision is evaluated against the public candidates
+required for its particular reported outcome.
+
+A recoverable decision requires an evidence chain that determines the release set, run-output
+set, evaluator and configuration, task universe, and aggregation rule without selecting a
+candidate because its value matches the paper. An outcome-specific presentation transform must also
+be reported where it determines the published value. A prose mapping can contribute to that
+chain, but it is neither necessary nor sufficient: immutable manifests and digests can bind
+evidence without prose, while a sentence naming a release can leave other components
+ambiguous. We therefore do not convert the cohort's prose-level grades into joint
+identifiability verdicts.
+
+\subsection{Reportability and recoverability are independent}
+
+The two properties come apart in both directions, and the audit found both.
+
+For one study, the audit codes the source task manifest as \emph{not reported} from the paper
+text, while its proceedings supplement contains a task manifest equal to the pinned public
+revision. This check establishes manifest equality only. The code describes the paper text; it
+does not assert that the manifest is absent from the supplementary artifact.
+
+In the other direction, released records can still leave an outcome-specific evidence chain
+incomplete. Publishing run outputs -- which 13 of the 20 own-artifact papers in this cohort
+do -- is therefore not the same property as making a reported number identifiable.
+
+\subsection{What bounded checks of released evidence reveal}
+
+The checks here are narrower than end-to-end recomputation. AutoCodeRover's source reports
+three repetitions of its base configuration, cites the standard $k=1$ estimator, and prints
+19.00\% (57) at @1, 26.00\% (78) at @3, and ACR-sbfl at 22.00\% (66) with no run-count
+annotation of any kind. Public run-output reports expose base-run count triples of 54/57/57 under
+the new evaluation and 48/47/50 under the old; the corresponding ACR-sbfl reports contain 66
+and 61. Raw per-repetition contrasts are \{9,12\} and \{11,13,14\}, respectively, spanning
+9--14. Applying the cited estimator to each complete triple instead gives source-unbound
+full-bundle differences of 10 and $38/3$. The source supplies neither a binding to a public
+bundle nor the complete selection/count presentation transform. This arithmetic selects no
+effect and does not change the identifiability verdict.
+
+For a selected SWE-Gym Moatless subset, counting released \emph{resolved} and
+\emph{empty-patch} fields shows four 299-record archives under a reported denominator of 300,
+each missing a different instance. Their arithmetic agrees with the displayed rounded
+proportions. For another selected point, its two reported components occur in different
+candidate archives and no selected archive contains both. These are selected-subset count
+comparisons, not evaluator reruns or complete reproduction of the study. The Agentless check
+is limited to inspection of its generation archive, and the SWE-agent check to task-manifest
+equality.
+
+\subsection{Implications}
+
+For authors, the actionable requirement is an outcome-specific evidence chain: identify and
+bind the release, run outputs, evaluator configuration, task universe, aggregation, and any
+presentation step needed for the reported value. A results-directory-to-table mapping can be
+part of that chain, but this audit does not establish that such a mapping alone would change
+any verdict.
+
+For artifact evaluation, availability and identifiability should be assessed separately. We
+did not run the planned tier-two per-class compatibility analysis, so we report no
+deposit-level transfer or compatibility determination.
+
+For reviewers of reproduction studies, the frame itself deserves scrutiny. The inherited
+corpus for this work was four studies, and re-deriving it produced 47. The difference was
+not judgement but retrieval: search channels that refused an automated client with an HTTP
+error before returning any result page, and metadata that made a published paper look
+unpublished until its peer-reviewed sibling was resolved by title. A corpus count cannot distinguish those failures from a real finding about a
+field's size.

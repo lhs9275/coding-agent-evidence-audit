@@ -1,0 +1,7 @@
+{
+  "credential_pattern_findings": 0,
+  "source_files_verified_against_commit": 37,
+  "pdf_pages": 7,
+  "pdf_hyperlink_check": "no file URIs; project links use the public repository",
+  "validation": "source hashes, v2 JSON exact equality and 57 focused tests; not independent science reproduction"
+}

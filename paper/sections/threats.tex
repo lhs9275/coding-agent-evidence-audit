@@ -1,0 +1,265 @@
+\section{Threats to Validity}
+\label{sec:threats}
+
+\subsection{The cohort is bounded, and nothing here is a prevalence estimate}
+
+The roster of 47 is a protocol-defined discovery cohort re-derived around four inherited
+studies. It is not a sample of the coding-agent literature, and the direction of what it
+misses is unknown: we cannot say whether unrostered work binds its artifacts better or
+worse, so the cohort's counts are neither a lower nor an upper bound on any population
+quantity. Every count is reported with its denominator named and none is converted into a
+rate over the literature.
+
+Selection enters at more than one point, and moving artifact availability out of the
+eligibility rule closes only one of them. By not conditioning cohort eligibility on artifact
+availability, we avoid enriching the cohort for readily auditable studies by construction;
+availability is instead measured for every rostered record. What remains open is the
+inherited selection of the four deep-audit studies (\S\ref{sec:method:provenance}), the 22
+of 47 rostered papers that expose no locator, a discovery frame seeded from those same four
+studies, and seven records adjudicated into scope after the roster was frozen and held out of
+it. The tier-two sample was drawn, but compatibility depth was not executed.
+
+Twenty decoys drawn from the first axis's \texttt{OUT\_OF\_SCOPE} bucket were judged blind by the second
+axis, and two were called in scope. This is an observed directional disagreement of 2/20
+without a gold label, not a false-negative rate. It does not support extrapolation to the
+463 first-axis \texttt{OUT\_OF\_SCOPE} records or to the literature.
+
+After sibling resolution, the second axis also judged 19 first-axis in-scope records in a
+non-blind coverage batch. That batch extended coverage but is not independent axis-quality
+evidence and is excluded from the 45/58 blinded-agreement calculation.
+
+A precision layer set 2{,}390 records aside in the two judgeable buckets before any axis
+judged them. A seeded sample of 100 of those records was adjudicated: four were in scope and
+none of the four carries a peer-reviewed record. That sample estimates the rate at which our
+operational procedure would call a record in the residual pool additionally eligible; it does
+not estimate the completeness or representativeness of the cohort, and 0 of 100 does not mean
+nothing was missed. The interval is over records rather than unique papers, so its upper
+bound is a record-level figure and is not comparable to a count of studies.
+
+The current corrected corpus records contain 237 unresolved rows and 214 unresolved records
+after title deduplication. These are unresolved records, not excluded studies, and they do not
+support a claim about how many eligible studies remain outside the frozen roster.
+
+\subsection{Absence of evidence is separated from evidence of absence throughout}
+
+Three distinctions carry weight and each is preserved in the data rather than in prose.
+
+A paywall is not an absent artifact. Of the 22 studies whose papers expose no locator, 10 are
+determinate -- the full text was read and names no artifact host -- and 12 are undetermined,
+9 because no open full text was located and 3 because the located text was not retrievable.
+
+\textsc{not found} is not \textsc{absent}. The corpus judgement reads the deposit's listing
+and the prose beside it. A binding stated in a paper appendix, a release note, or a branch
+that was not read would not be seen, and the reported figure is therefore an upper bound on
+absence.
+
+An unresolved preprint is not an unpublished study. One confirmed study is in the pool only
+as its arXiv record because its proceedings venue is under-indexed by every channel that
+answered.
+
+\subsection{The corpus claim is read, because the pattern screen was measured and failed}
+
+An automated screen was built first and is not what the corpus claim rests on. Measured
+against blind readings of the same evidence it disagreed on 8 of 25 studies, and the
+disagreements were not noise. It attributed to one paper a binding sentence belonging to a
+copy of a third-party agent vendored inside that paper's repository. It missed released
+per-run evidence exported as CSV, because its file-name patterns did not cover that
+extension. It recorded run outputs for a release archive on the strength of the substring
+\texttt{eval} in its name. It reported one study as publishing no run outputs when that
+study's traces, predictions and harness logs are published as downloads linked from the
+repository rather than committed inside it. Every one of these is a defect of pattern
+matching standing in for reading, and tightening the patterns further would only move the
+error rate without measuring it, since the studies available to tune on are the same ones the
+claim is about.
+
+The 25 studies were therefore judged by reading a blind evidence dump per study, with the
+screen's verdicts withheld while judging and recorded beside each judgement afterwards. The
+screen remains in the artifact as the evidence-gathering step -- it retrieves listings,
+release assets and prose -- and its verdicts are reported only as the comparison above.
+
+The judgement is by one rater and is not blinded to the study's identity, which the deposit
+itself reveals. Its inputs, its per-study rationale and the disagreeing screen verdicts are
+released together so a disputed call can be checked against the same evidence.
+
+Whose artifact a locator names is itself a judgement. Papers cite their own artifact in their
+reference list, footnote it without a sentence, and name third-party tools in prose the same
+way, so no positional rule separates them: harvesting full text without this distinction gave
+one paper the repositories of two agents it merely built on. Each locator therefore carries a
+recorded provenance -- the repository is named after the paper, an offering sentence sits
+beside it, an artifact word introduces it, or it is only mentioned in passing -- and every
+locator was screened whatever its provenance, with ownership settled at judgement with the
+deposit's contents in hand. Five of the 25 were judged not to be the paper's own.
+
+\subsection{Tier-two sample drawn; compatibility analysis not executed}
+
+The recorded design would draw $\min(4, |\text{class}|)$ studies per tier-one availability
+class under seed 20260809. The realized draw contains 18 non-census studies; adding the four
+inherited census-stratum studies yields a tier-two set of 22. No per-class compatibility analysis
+was run. The paper therefore reports no per-class result, pooled compatibility rate, transfer
+verdict, or study-level attemptability judgement. The completed corpus work is the extraction
+design and availability/disposition screen, including the 22 rostered papers that expose no
+locator.
+
+\subsection{Construct: what the audit measures}
+
+The audit measures whether published evidence supports re-deriving a published comparison.
+It does not measure whether the comparison is correct. We re-ran no agent and re-evaluated
+no patch, and tier-two attemptability was not judged. No actual deposit was established in
+advance as a known-positive control under the v2 rule. The zero identified decisions therefore
+cannot calibrate the audit's sensitivity to a real positive.
+
+The item states also depend on a preregistered required-item vector per comparison, frozen
+before retrieval. A different but defensible derivation of which items a comparison requires
+would move the item counts. The v2 verdicts follow the recorded outcome-specific rule and the
+enumerable public candidates; they do not prove that every defensible alternative criterion
+would produce the same states.
+
+\subsection{The target specification was re-derived blind, and our own record had to be
+repaired first}
+
+Every verdict here is conditional on one target specification: what each decision's reported
+outcome is, which components its recovery requires, and which evidence chains would suffice.
+Freezing that specification before adjudication, as \S\ref{sec:results:compatibility} records,
+establishes that it was not edited to fit a verdict. It does not establish that it is right. A
+mis-specified outcome makes the audit search for the wrong evidence, find none, and report
+non-exposure; nothing downstream of the specification can detect that.
+
+We therefore re-derived it. Two model axes with no access to this project's records were each
+given one decision's identifier, its source document, an empty five-coordinate schema, and the
+full text of the source, and asked to derive the outcome, the benchmark frame, the condition and
+repetition structure, the applicable and inapplicable coordinates, and two independent
+properties of the released evidence: whether it identifies the exact reported point estimate,
+and whether it could contradict it. Answers were forced into integers and closed vocabularies
+so the comparison is mechanical, every quotation was verified against the source, and
+disagreement survived as unresolved rather than being reconciled. Each axis first decides
+whether the material it was given picks out one quantity at all, and an axis that says it does
+not writes no manifest.
+
+The first pass failed for a reason that is ours, not the sources'. Six decisions cited the
+character-identical location \emph{Section 4.2 and Table 3}, and three further groups collided
+once overlapping location strings were counted, so an axis was being asked about a passage
+rather than a decision -- and answered accordingly, returning the same denominator and numerator
+for a resolution comparison and for a cost comparison that cite one table.
+
+The repair keeps the audit out of the pointer. Each decision inherits the numeric literals its
+source prints for it, taken mechanically from our register's value column: a set of printed
+figures locates a cell without stating what the cell measures, what it is over, how it
+aggregates, or what would recover it. Every literal is required to occur in its source and every
+set to be unique among the twenty. Under that pointer all twenty decisions are individuated.
+
+Fourteen of the twenty then join. On the property this paper's result rests on -- whether the
+released evidence identifies the exact reported point estimate -- \textbf{twelve of the fourteen
+agree that it does not}, and two split, with the disagreeing axis in each case being the one
+that answered yes. That is blind corroboration of the central finding rather than a restatement
+of it: neither axis could see our records, our verdicts, or each other. The second property is
+not settled the same way. Whether released evidence could \emph{contradict} a printed number is
+a weaker and more permissive question, and the axes agree on it in seven of fourteen, with one
+axis answering yes throughout; we therefore report non-identification as corroborated and
+contestability as open. Across the fourteen the evidence is 661 quotations matched exactly,
+five matched only across an extraction splice, 174 recorded absences, and none unmatched.
+
+The six that do not join are three different things, and none of them is unfinished work. \textbf{Three} were refused by both axes independently because the value cell
+\emph{we} recorded does not name one compared quantity: \texttt{CMP-034} carries the
+three-repetition row alongside the single-attempt pair, \texttt{CMP-024} carries two model rows
+of one table against two separate claims, and \texttt{CMP-004} records an ablation range whose
+lower bound is not an ablation value at all but a figure from a different table, for a different
+system, on a different split from the one the decision is about. A fourth, \texttt{CMP-018},
+recorded a leaderboard rank in the same cell as the value; that one is mechanically repairable
+against the source's own column header, and once the rank is removed the axis that had refused
+the decision binds it and it joins. So for three of twenty audited decisions our own record
+carries the defect this paper reports in its sources -- a cell that does not identify one
+compared quantity -- and repairing them is not available to us, because choosing which recorded
+value a decision is \emph{about} would be authoring the target semantics the axes exist to
+derive independently. \textbf{Two} were refused on quotation: one axis substituted a connective,
+writing \emph{Furthermore} where its source reads \emph{In addition}, and in the other the axis
+quoted table rows whose cells the extraction emits in a different order than the row.
+
+The last, \texttt{CMP-041}, is the case that says most about the gate. Its cell records two
+values because \emph{the source prints two}: the text gives 19.7\% at $k{=}1$ rising to 26.3\%
+at $k{=}8$, while Figure~4 labels the same curve 19.1\% and 26.0\%. One axis bound the text pair
+and the other the figure pair; neither is wrong, and no single target manifest exists. Our
+register had already logged that conflict, and the axes reached it from the sources alone with
+no access to the register -- so the gate is detecting real ambiguity in the sources, not only
+our own bookkeeping. A further split had no defect behind it at all: our coordinate extractor
+had taken the \emph{4} out of the model name \emph{GPT-4 Turbo}, and both axes then located it
+in the source as a \$4 per-instance budget, a parameter of the run rather than a value of the
+compared quantity. The extractor now refuses a digit hanging off a hyphen that follows a
+letter, and that decision joins.
+
+The quotation check is worth stating because an earlier version of this subsection reported the
+wrong repair for it. Reading a two-column source in reading order splices foreign material into
+the middle of a sentence -- a page number, a row from the table beside the paragraph -- so an
+axis that quotes what a human reads as one sentence writes something the byte stream does not
+contain contiguously. We first proposed to warn the axes to quote only uninterrupted stretches.
+That would have taught the instrument to cite away from tables and page breaks, biasing which
+evidence is offered in order to make our checker pass, and hiding a defect that is ours. The
+check was changed instead: a quotation may cross bounded extraction debris, subject to limits on
+how many interruptions, how wide, how short a run may resume on, and how much of the quotation
+may be debris, with order never negotiable. Such matches are counted separately rather than
+called exact -- five of 666 here -- and the two refusals above survive the relaxation, which is
+what tells us it did not admit everything regardless.
+
+Two axes filling one schema can be wrong together wherever the schema is wrong, and their
+agreement cannot show it, because neither answer has a field for what the schema omitted. We
+therefore ran a second, open-ended derivation on a sample fixed in advance: one joined
+decision per study, drawn by a seeded script before any prompt was written, with the protocol
+and the draw recorded first. Exactly one thing was removed. The axes were asked, in prose and
+with no field list, what the decision reports, what a reproducer would have to obtain, and
+whether the released evidence is enough to arrive at the printed number or to contradict it.
+The coordinates were kept, because removing them changes which decision is being described.
+
+The probe found three components the schema has no field for, so the schema-bound counts above
+are conditional on a schema now known to be incomplete. Most of each open answer maps cleanly,
+and the largest group that does not map neatly -- prompts, seeds, decoding settings, scaffold
+versions -- is deliberately not counted among the three, since the release identity and the
+sufficiency judgement between them already carry it.
+
+The clearest is a contradiction that needs no released evidence at all, which is what
+\texttt{contestable} is defined to exclude. For \texttt{CMP-011} the source reports
+Stuck-in-Loop rates over a stated 500 instances, and at that denominator the attainable
+percentages fall on a 0.2 grid. Four of the six printed cells are exact counts --
+39.6\% is 198/500, 21.0\% is 105, 29.4\% is 147, 23.8\% is 119 -- and two are not reachable by
+any integer count at all: 32.1\% is 160.5 tasks and 21.3\% is 106.5. The same row disagrees
+with itself again in its printed differences, two of which are the difference of their printed
+operands while the third is not: $32.1 - 21.3 = 10.8$, printed as $-10.7$. What this
+contradicts is a reading -- that each cell counts one completed trajectory per instance over
+500 -- and the source chooses between the readings that survive nowhere; a per-row denominator
+below 500, or more than one trajectory per instance, would each accommodate the figures. The
+point for this paper is that the contradiction is a property of the published table, available
+with no artifact, and that neither schema-bound axis reported it because the schema gave it
+nowhere to go.
+
+The second is the evaluator's own conduct. \texttt{evaluator\_components} carries exactly four
+keys and an answer with any other set is rejected, so what the judges were told, whether they
+judged blind to which system produced a patch, and how often they disagreed cannot be recorded
+at all. A procedure for resolving disagreement and a record of its rate are different things,
+and \texttt{CMP-035}'s source supplies the first and not the second. The third and weakest is
+the presentation transform: the step from counts to a printed figure, which this paper's own
+prose names separately from aggregation while the schema offers one field for both.
+
+None of the three would turn a \emph{not identified} into an \emph{identified}, which is the
+direction this result runs; they bear on how a printed value relates to its counts and on the
+evaluator's procedure. And four decisions is four. Nothing here estimates how many of the
+remaining sixteen carry an uncaptured component, and the sample was drawn from the decisions
+that join, which are not a random subset of the twenty. What the probe establishes is that
+this is a schema an open reading can still add to -- it added the comparator once already, and
+that component is now a field.
+
+Three limits remain even so. Two model axes share training and prompting and can be wrong
+together, so agreement is weak evidence, the open probe above bounds that rather than removing
+it, and no human re-derivation was performed. Whether our register
+recorded the right figures in the cells that did join is upstream of this check and stays
+unexamined; the layer can only see a defect that makes a cell ambiguous, not one that makes it
+wrong. And the layer's own verdicts moved as its contract was repaired -- an earlier contract,
+with a single sufficiency field and no component structure for the evaluator, joined all twenty
+-- so what is reported here is a count under one stated contract, and the contract, like the
+specification it checks, is ours.
+
+\subsection{Researcher degrees of freedom, disclosed}
+
+The eligible-decision denominator moved during specification, from 43 to 37 to 39 to 20, as
+the eligibility rule was corrected against the claim-type record. Anything computed on the
+retired denominators is reported only as an audit of the retired rule. The frozen corpus and
+required-item vectors were recorded before the outcomes they bear on were inspected. The
+two-tier split, sampling seed, and realized draw are design and selection records; they produced
+no tier-two compatibility outcomes.

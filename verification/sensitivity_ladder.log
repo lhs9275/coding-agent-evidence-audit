@@ -1,0 +1,9 @@
+  R0  {'UNIDENTIFIED': 20}   <- the criterion as adjudicated
+  R1  {'UNIDENTIFIED': 20}   <- closure of the candidate universe no longer required
+  R2  {'UNIDENTIFIED': 20}   <- and an aggregation rule no longer required
+  R3  {'UNIDENTIFIED': 19, 'NOT_UNIQUE': 1}   <- and an evaluator and configuration no longer required
+  R4  {'UNIDENTIFIED': 17, 'NOT_UNIQUE': 3}   <- and a release set no longer required
+  R5  {'UNIDENTIFIED': 20}   <- separate availability comparator: all components restored, uniqueness not required
+
+first rung at which any decision is IDENTIFIED: none
+wrote verification/sensitivity-ladder.json

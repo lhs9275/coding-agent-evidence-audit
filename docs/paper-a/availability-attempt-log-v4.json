@@ -1,0 +1,72 @@
+{
+  "assigns_item_states": false,
+  "attempts": [
+    {
+      "attempted_at": "2026-08-07T22:55:22Z",
+      "comparisons": [],
+      "content_type": "application/octet-stream",
+      "declared_content_length": 12066326,
+      "entity_id": "COMPARATOR",
+      "http_status": 200,
+      "locator_class": "DATA",
+      "locator_id": "SRC-DATA-002-TEST",
+      "method": "GET",
+      "recorded_in_register": true,
+      "retrieval_status": "RETRIEVED",
+      "retrieved": true,
+      "retrieved_bytes": 12066326,
+      "retrieved_bytes_sha256": "0996c4bd66e647ecef89d3ef57e527dcc0ea4e8369ac6f740cdd570734188df2",
+      "stored_at": "/cephfs/lab/users/2022810061/Paper-A-TOSEM/avail-bytes/SRC-DATA-002-TEST.bin",
+      "study": "pinned benchmark revisions",
+      "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench/resolve/7074ef12ea2a6f70a228943c1336553333c22786/data/test-00000-of-00001.parquet"
+    },
+    {
+      "attempted_at": "2026-08-07T22:55:24Z",
+      "comparisons": [],
+      "content_type": "application/octet-stream",
+      "declared_content_length": 1111559,
+      "entity_id": "COMPARATOR",
+      "http_status": 200,
+      "locator_class": "DATA",
+      "locator_id": "SRC-DATA-003-TEST",
+      "method": "GET",
+      "recorded_in_register": true,
+      "retrieval_status": "RETRIEVED",
+      "retrieved": true,
+      "retrieved_bytes": 1111559,
+      "retrieved_bytes_sha256": "f46f2e3f003f2552932393da4b223e1e0456a2c71eba8b73ae58f29646c1278b",
+      "stored_at": "/cephfs/lab/users/2022810061/Paper-A-TOSEM/avail-bytes/SRC-DATA-003-TEST.bin",
+      "study": "pinned benchmark revisions",
+      "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Lite/resolve/69611d31007e1c6731db8bd5b5c3f2d33f5bab6e/data/test-00000-of-00001.parquet"
+    },
+    {
+      "attempted_at": "2026-08-07T22:55:26Z",
+      "comparisons": [],
+      "content_type": "application/octet-stream",
+      "declared_content_length": 2090470,
+      "entity_id": "COMPARATOR",
+      "http_status": 200,
+      "locator_class": "DATA",
+      "locator_id": "SRC-DATA-004-TEST",
+      "method": "GET",
+      "recorded_in_register": true,
+      "retrieval_status": "RETRIEVED",
+      "retrieved": true,
+      "retrieved_bytes": 2090470,
+      "retrieved_bytes_sha256": "43ed5a3d1d98da36472c1ade65ddd2085d7b4ff694fcaf6a023a07c5c1f32f21",
+      "stored_at": "/cephfs/lab/users/2022810061/Paper-A-TOSEM/avail-bytes/SRC-DATA-004-TEST.bin",
+      "study": "pinned benchmark revisions",
+      "url": "https://huggingface.co/datasets/SWE-bench/SWE-bench_Verified/resolve/91aa3ed51b709be6457e12d00300a6a596d4c6a3/data/test-00000-of-00001.parquet"
+    }
+  ],
+  "class_conditional_reading": "A NO-BYTES on a PAPER-class locator is a statement about this automated client's transport, not about the artifact. Publisher endpoints refuse scripted clients; the register records these same locators as VERIFIED from a human access. Nothing turns on the difference, because PREREG-AVAIL-001 forbids a paper locator from establishing an artifact item state in either direction.",
+  "document_id": "AVAIL-ATTEMPT-LOG-V1",
+  "inputs": {
+    "inventory": "/cephfs/lab/users/2022810061/Paper-A-TOSEM/repository/docs/paper-a/availability-locator-inventory-v4.json",
+    "inventory_sha256": "79bb92ebbb32b4fc8bc65f81baba6c3337abb90f3c23211d819eaf3c1cf704f4"
+  },
+  "reading_rule": "retrieval_status is the ART-010/ART-011 retrieval vocabulary: RETRIEVED, NO-BYTES, or NO-PUBLIC-LOCATOR. NOT-SCHEDULED means the inventory did not schedule a body read for this locator, which is neither of those and cannot be read as either. A 200 with NOT-SCHEDULED establishes reachability only.",
+  "restricted_to": null,
+  "schema": "availability-attempt-log.v1",
+  "scientific_claims": false
+}

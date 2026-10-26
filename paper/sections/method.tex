@@ -1,0 +1,155 @@
+\section{Method}
+\label{sec:method}
+
+\subsection{Re-deriving the eligible frame}
+\label{sec:method:frame}
+
+The study inherited a corpus of four peer-reviewed studies. That corpus is a property of the
+search that produced it rather than a census of the field, and its own record says so: of
+eighteen search channels, seven returned HTTP 403, 418 or 429 before a result page,
+including both venue databases where software-engineering reproduction work appears and both
+citation traversals. The screening log records no excluded study, so no candidate pool was
+ever narrowed to four; the four entered by artifact-link traversal from seed benchmarks.
+
+We re-ran discovery over channels that answer -- OpenAlex, Crossref, DBLP, arXiv and
+OpenReview -- with six queries that do not require a paper to name SWE-bench. OpenAlex and
+Crossref index the ACM and IEEE proceedings whose own endpoints still refuse an automated
+client. Every attempt records the channel's reported total against what was actually
+retrieved, so a partial tail is visible rather than passing as complete.
+
+Discovery yielded 27{,}921 deduplicated records. A deterministic first-stage gate removed
+records outside the publication window or carrying no topical signal, and a second layer
+required a term specific to repository-level software maintenance rather than the generic
+\emph{benchmark} or \emph{evaluation}. That layer is a priority split rather than an
+exclusion: the records it does not select remain in the frame and the resulting uncertainty
+is discussed in Section~\ref{sec:threats}.
+
+\subsection{Screening}
+\label{sec:method:screening}
+
+The frozen protocol prescribes two outcome-blinded human reviewers with a third resolving
+criterion-level disagreement. Human coding was excluded for this project, so we used two LLM
+model axes. For the 58-record blinded comparison, what is preserved is independence
+between axes, blinding to the outcome, and disagreement surviving as \textsc{unresolved}
+rather than being averaged into a verdict. What is not preserved is that the reviewers are
+human, and that the second axis covers every record blindly. Both are recorded as deviations.
+
+The screen separates scope from eligibility. Criteria
+that turn on what a paper did -- whether its task identities are identifiable, whether its
+protocol is reconstructable -- are not decidable from an abstract, and requiring them at
+abstract level made the confirmatory verdict nearly unreachable. Peer-review status is a
+metadata fact rather than a judgement and is decided from record type and venue, with an
+explicit list of hosts that are institutional repositories rather than venues.
+
+A preprint is not a dead end. The protocol deduplicates a preprint into its study family,
+and one confirmed study is present in the pool only as its arXiv record because PMLR is
+under-indexed by every channel that answered. Sibling resolution recovers the peer-reviewed
+version by title from DBLP; treating an unresolved preprint as excluded would turn a
+metadata gap into an eligibility decision.
+
+The first axis judged all 929 priority records. The second, a different model family, judged
+58 records blind: 38 first-axis \texttt{IN\_SCOPE} records and 20 decoys drawn from the first
+axis's \texttt{OUT\_OF\_SCOPE} bucket, shuffled so the second axis could not tell them apart. After sibling
+resolution, it judged 19 additional first-axis in-scope records in a non-blind coverage
+batch. That batch extended coverage but is not independent axis-quality evidence. Agreement
+in the blinded comparison was 45 of 58, with most disagreement being one axis uncertain
+where the other was definite.
+
+The resulting roster is 47 studies whose records were judged in scope by both model axes,
+with a peer-reviewed record established from metadata or recovered by sibling resolution.
+The independence and blinding evidence is limited to the 58-record blinded batch. It is a bounded
+discovery cohort, not a census, and nothing in this paper treats it as one. Studies are
+counted once at the strongest evidence band they earn, because one study appears as several
+records and deduplicating within bands alone would count it twice.
+
+\subsection{Where the four deep-audit studies came from}
+\label{sec:method:provenance}
+
+The four studies audited in depth were not sampled. They were inherited from an earlier
+project, under a selection rule that is not documented and cannot be reconstructed, and this
+paper's discovery protocol was written afterwards and around them: the roster of 47 is a
+re-derivation of the frame those four came from, not an independent frame that happens to
+contain them. What can be established is order, not independence -- the four were fixed
+before any result reported here was produced -- and order alone does not rule out that the
+earlier project chose them for artifact richness or for known reproduction difficulty. We
+therefore claim no outcome-independent selection and no representativeness, and every claim
+about the four is stated about those four.
+
+\begin{table}[t]
+\caption{What was frozen, when, and with what digest. A row marked \emph{not frozen} is
+recorded as such rather than described as fixed.}
+\label{tab:freeze}
+\small
+\begin{tabular}{p{0.23\columnwidth}p{0.22\columnwidth}p{0.38\columnwidth}}
+\toprule
+Object & Frozen & Evidence \\
+\midrule
+Protocol document & before item derivation & sha256 recorded as the derivation's input \\
+Required-item vector (206) & before any availability lookup & status recorded in the vector file \\
+Roster of 47 & before outcome coding & sha256 recorded in the register \\
+Two-tier split & before any tier-1 result & recorded in the register \\
+Four-study selection rule & \emph{not frozen} & inherited; rule not recoverable \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The 206 requirements were instantiated by applying the codebook to the four studies during
+case application, and the vector carries the status \textsc{frozen before any availability
+lookup} together with the protocol digest it was derived from. Table~\ref{tab:freeze} lists what was frozen, when, and against which digest. We disclose the frozen vector,
+its protocol hash, and all retained provenance; per-requirement derivation links, timestamps
+and revision histories were not retained, so we claim set-level priority and not an
+item-level derivation trail.
+
+\subsection{Two-tier audit}
+\label{sec:method:tiers}
+
+Auditing 47 studies at the depth applied to four is roughly ten times the work, and the cost
+is not retrieval but the per-study closure judgement and axis derivation. The audit
+therefore splits, and the split was frozen before any tier-1 result was inspected.
+
+Tier one is the availability design across all 47: enumerate the artifact locators each paper itself
+exposes, attempt them, and judge whether the deposit is the paper's own, whether it holds
+run outputs, and whether anything in it states which released artifact produced which
+reported number. Retrieval is automated and the three judgements are read, from a blind
+evidence dump per study in which every automated verdict is withheld
+(\S\ref{sec:method:verification}). Tier two was specified as compatibility depth on a sample
+drawn after tier one and within tier-one availability classes at
+$\min(4, |\text{class}|)$ per class. The draw used seed 20260809 and selected 18 non-census
+studies; together with the four inherited census-stratum studies, the tier-two set contains
+22 studies. No per-class compatibility analysis was run. The completed
+corpus-scale reporting is the availability/disposition screen, including the 22 rostered
+papers that expose no locator.
+
+\subsection{Why the corpus claim is read rather than pattern-matched}
+\label{sec:method:verification}
+
+An automated screen was built for availability evidence first and checked against the four
+inherited studies whose answers had been established by reading. A separate availability-
+instrument check used channels the screen does not read. Neither check was a tier-two
+compatibility analysis. Both changed the screen, and a third measurement retired it as the
+instrument.
+
+Validation caught the screen counting a source file and a test fixture as run outputs, and
+reading an instruction to regenerate a figure as a binding to a reported number. The second
+was not removed. Regenerating a figure from released data is weaker than stating which run
+produced which number, but it is real, and deleting it to protect the hypothesis would have
+been the wrong move; it is reported as its own grade.
+
+The separate availability-instrument check found two error classes that together would have produced a
+cleaner result than the truth. Locators harvested from full text included the benchmark
+repositories a paper evaluates on rather than the artifact it published, so for one study
+the screen audited three unrelated repositories while the study's own never entered the
+list. And the screen read only the default branch, so artifacts attached to releases were
+invisible -- one study attaches a 1.2\,GB run archive to a release and keeps nothing in the
+tree. Both were corrected and the corpus rescreened.
+
+The corrected availability screen was then measured against blind readings of the same evidence on 13
+studies held out from every pattern fix, and it disagreed on 4 of 13 -- every binding disagreement in
+the direction of missing one. Because the studies available to tune on are the studies the
+claim is about, tightening further would have moved the error rate without measuring it. All
+25 studies exposing a locator were therefore judged by reading for the availability screen,
+each from a dump of its deposit's listing and prose with the screen's verdicts withheld, and the screen's verdicts
+recorded beside the judgement afterwards; it disagrees on 8 of 25.
+Section~\ref{sec:results:corpus} reports the read figures,
+Section~\ref{sec:threats} what the screen got wrong, and the earlier screen-derived figures
+are withdrawn.

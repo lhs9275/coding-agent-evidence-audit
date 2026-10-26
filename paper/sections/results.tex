@@ -1,0 +1,275 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{Item-level availability across 20 comparisons}
+\label{sec:results:availability}
+
+The 20 eligible comparisons require 206 evidence items between them, derived from each
+comparison's protocol-component set and frozen before any retrieval. Table~\ref{tab:states}
+gives the assigned states.
+
+\begin{table}[t]
+\caption{Item states across 206 required evidence items, and aggregate class across the 20
+comparisons. No item reaches \textsc{public-hash-verified}: not one of the four studies
+records an immutable digest for any run artifact, so retrieved bytes have nothing to verify
+against.}
+\label{tab:states}
+\begin{tabular}{lr}
+\toprule
+Item state & Items \\
+\midrule
+\textsc{public-unverified} & 17 \\
+\textsc{inaccessible} & 189 \\
+\textsc{public-hash-verified} & 0 \\
+\textsc{private} & 0 \\
+\textsc{reported-not-released} & 0 \\
+\textsc{not-reported} & 0 \\
+\midrule
+Aggregate class & Comparisons \\
+\midrule
+\textsc{public-partial} & 10 \\
+\textsc{private-or-unavailable} & 10 \\
+\textsc{public-complete} & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Two of the zeros carry different weight. \textsc{public-hash-verified} is unreachable
+because no source records a digest to verify against, which is a property of the sources
+rather than of the retrieval. \textsc{not-reported} is empty because every comparison has at
+least one required item that some attempted locator did carry, so incomplete closures route
+to \textsc{inaccessible} instead.
+
+Counting what blocks the 189 inaccessible items by kind, the largest is terminal and
+missingness evidence at 134, followed by evaluator outcomes at 69 and analysis binding at
+62. The first two are absences of data. The third is not: those closures fail because no
+source states which released artifact produced which reported number.
+
+\subsection{Bounded checks of released evidence}
+\label{sec:results:recompute}
+
+The operations in this subsection differ by study and the claims are limited accordingly;
+Table~\ref{tab:evidence-operation-claim} states the ceiling each one carries. For
+the selected SWE-Gym~\cite{TrainingSoftwareEngineering2024} Moatless subset, we count the
+released \emph{resolved} and \emph{empty-patch} fields; this is arithmetic over selected
+archives, not a rerun of the evaluator. Four of five selected archives agree arithmetically
+with a reported point at the stated denominator of 300. \texttt{release-32b-zero} contains 57
+resolved and 73 empty-patch tasks against 19.0\% and 24.3\%;
+\texttt{release-32b-exp0} contains 59 and 55 against 19.7\% and 18.3\%.
+
+\begin{table}[t]
+\caption{Evidence--operation--claim matrix for the released-byte checks. Each row states the
+strongest claim carried by that operation, not a study-wide reproduction verdict.}
+\label{tab:evidence-operation-claim}
+\small
+\begin{tabular}{p{0.13\columnwidth}p{0.28\columnwidth}p{0.42\columnwidth}}
+\toprule
+Study & Operation & Claim ceiling \\
+\midrule
+SWE-agent & Compare task IDs with a pinned manifest & Task-manifest equality only \\
+SWE-Gym & Count selected archives' resolved/empty fields & Selected-subset arithmetic; no evaluator rerun \\
+Agentless & Inspect the generation archive & Archive contents only; no score reproduction \\
+ACR & Compare run-report counts & Source-unbound candidate arithmetic; no binding or effect \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The selected SWE-Gym archives also expose two different gaps.
+
+\paragraph{A reported point that no single selected archive contains.}
+The 7B middle sequence point requires 27 resolved and 87 empty-patch tasks. The released
+archives give 27 with 112, 29 with 87, 23 with 131, and 28 with 92. Each reported component
+appears in a different \texttt{top\_k} archive; none contains both, and the selected
+candidate archives are exhausted.
+
+\paragraph{Silently dropped run positions.}
+Four released archives hold 299 records against a reported denominator of 300, each missing
+a different instance: \texttt{sympy\_\_sympy-13773}, \texttt{sympy\_\_sympy-16106},
+\texttt{sympy\_\_sympy-14396} and \texttt{sympy\_\_sympy-11897}. Arithmetic under denominator 300 agrees with the displayed proportions,
+so the absence is invisible in their rounded presentation. Four different instances across four distinct
+public run archives land in one repository, and no terminal reason is recorded for any of them.
+
+\paragraph{Checks with narrower scopes.}
+For SWE-agent, the check establishes task-manifest equality with the pinned public revision
+and nothing beyond it. For Agentless, we inspect the released generation archive; we do not
+claim an evaluator rerun or full figure recomputation for either study.
+
+\paragraph{Three reported repetitions and unbound run-output reports.}
+AutoCodeRover~\cite{AutocoderoverAutonomousProgram2024} reports three repetitions of its base
+configuration, cites the standard $k=1$ estimator, and annotates two of its three printed Lite
+figures accordingly: 19.00\% (57) at @1 and 26.00\% (78) at @3. The third, ACR-sbfl at
+22.00\% (66), carries neither annotation, and the source states no run count for it anywhere.
+The displayed pair therefore contrasts a three-run statistic with a figure whose aggregation
+the source does not state. Its released
+run-output reports expose base-run count triples of 54/57/57 under the new evaluation and
+48/47/50 under the old. The corresponding ACR-sbfl reports contain 66 and 61. Raw
+per-repetition contrasts are therefore \{9,12\} under the new reports and \{11,13,14\} under
+the old, spanning 9--14. Applying the cited estimator to each complete triple instead gives
+source-unbound full-bundle differences of $66-56=10$ and $61-145/3=38/3$. The source does
+not bind a table cell to a public bundle or state the complete selection/count presentation
+transform. Neither arithmetic selects an effect or changes the identifiability verdict.
+
+\subsection{Joint identifiability; tier-two compatibility analysis not executed}
+\label{sec:results:compatibility}
+
+Each of the 20 comparison decisions nested in the four studies was adjudicated under a
+protocol whose rule identity and inputs are digest-recorded. The digests establish which rule
+and inputs were used, not that the rule preceded the verdicts: the protocol and first verdicts
+entered the repository together. Identification requires that a reproducer can determine the
+tuple \emph{(release set, run-output set, evaluator and
+configuration, task universe, aggregation rule)} without selecting among candidates by
+comparing their outputs to the reported value. The outcome-specific v2 re-adjudication assigns
+all 20 decisions \textsc{unidentified}; none is \textsc{identified}, \textsc{open-universe
+singleton}, \textsc{no admissible tuple}, or \textsc{compatibility not evaluated}. All five
+condition groups across the four studies are consequently \textsc{not identified}. Each
+decision lacks at least one enumerable candidate of the type required by its reported outcome.
+This is non-exposure in the public record, not proof that the object never existed.
+
+The earlier v1 artifact-global enumeration reported 18 \textsc{unidentified} decisions and
+set two aside after constructing an upper bound of 13{,}200 combinations per decision. That
+record is preserved as history but superseded: it mixed outcome records with evaluator
+procedures, treated generic documents as aggregation rules, and did not represent the
+presentation transform. Neither the 18+2 split nor the 13{,}200 upper bound is a current
+scientific result.
+
+For CMP-034, the source's three-repetition statement covers the base configuration alone,
+and neither it, the cited $k=1$ estimator, nor the printed 57/66/78 counts bind the $k=1$
+value to a public run-output bundle. As the arithmetic
+in \S\ref{sec:results:recompute} shows, the 9--14 range consists of raw per-repetition
+contrasts, while the complete-bundle source-unbound differences are 10 and $38/3$. Any effect
+claim remains conditional on the unreported source-to-public-bundle binding and complete
+selection/count presentation transform; selecting one would be reverse inference from the
+reported value.
+
+For CMP-035, the analysis unit is a unique SWE-bench Lite task. The denominator is the 78
+unique tasks with any plausible selected final patch across the three repetitions, and the
+numerator is the 51 unique tasks with any semantically correct selected final patch across
+those repetitions. The source reports those aggregates,
+but the public record contains no task-level human semantic-label vector. Machine evaluator
+reports are not candidates for that human outcome, so the outcome-specific run-output
+component is unenumerable and the decision is \textsc{unidentified}.
+
+The planned tier-two per-class compatibility analysis was not run. Accordingly, the v2
+identifiability result is not accompanied by transfer-attemptability or per-class compatibility
+claims.
+
+\subsection{Post-hoc sensitivity of the identifiability result}
+\label{sec:results:sensitivity}
+
+The v2 sensitivity analysis was written after the all-negative result was known. R0 is the
+recorded criterion; R1 drops candidate-universe closure; R2 additionally drops aggregation;
+R3 additionally drops the evaluator; and R4 additionally drops the release set. R5 is a
+separate availability-only comparator that restores all five components and drops uniqueness,
+not a continuation of R4. No case consults a reported value or supplies missing evidence.
+R0 preserves the adjudicated state, and Table~\ref{tab:sensitivity} gives the counts at every
+rung. A singleton created only by removing a coordinate in
+R2--R4 remains compatibility-not-evaluated unless it descends from an already compatible
+singleton; projected compatibility is not invented.
+
+\begin{table}[t]
+\caption{Post-hoc v2 sensitivity over the same 20 decisions. NU means that multiple
+enumerated candidates remain; it is not an admissibility verdict.}
+\label{tab:sensitivity}
+\begin{tabular}{lrrr}
+\toprule
+Case & Unidentified & NU & Identified/available \\
+\midrule
+R0 & 20 & 0 & 0 \\
+R1 & 20 & 0 & 0 \\
+R2 & 20 & 0 & 0 \\
+R3 & 19 & 1 & 0 \\
+R4 & 17 & 3 & 0 \\
+R5 & 20 & 0 & 0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+No rung yields an already evaluated, supported identification; R3/R4 NU counts are raw
+candidate multiplicity, not projected admissibility verdicts. The result is therefore not
+created by closure alone,
+although the absence of an actual-deposit known-positive control prevents an empirical
+sensitivity estimate for the rule itself.
+
+\subsection{Corpus-scale availability}
+\label{sec:results:corpus}
+
+This subsection characterises the cohort the four audited studies sit in. It is not a
+prevalence estimate: the roster of 47 is a bounded, protocol-defined discovery cohort frozen
+before outcome coding, not an enumeration of the eligible literature, and every count below
+names its own denominator. Twenty-five of the 47 rostered papers expose an artifact locator;
+the remaining 22 are dispositioned in \S\ref{sec:threats}.
+
+Judgement is by reading, not by pattern: for each of those 25 a blind evidence dump of the
+deposit's file listing and prose windows was formed with every automated verdict withheld,
+and the questions below were answered from it. A pattern screen was run alongside for
+comparison and disagreed with the reading on 8 of the 25; \S\ref{sec:threats} reports what
+it got wrong and why the reading, not the screen, carries what follows.
+
+The cohort's earlier binding grades are withdrawn. They were formed from prose statements in
+the deposits -- a README pairing an expected output file with a reported value, a document
+saying its table is the figure in the paper -- and a prose statement is neither necessary nor
+sufficient for the property this paper is about. A manifest, an immutable commit and a run
+index can bind a released artifact to a reported number with no such sentence, and a sentence
+naming a release still leaves the number unbound when the run-output set, evaluator
+configuration, task universe or aggregation rule remains ambiguous.
+
+In their place we report what this evidence can carry. The same five components were
+adjudicated for each deposit by a second model family, reading the frozen protocol and a blind
+evidence dump with the earlier verdicts withheld, and recording for each component whether the
+deposit exposes exactly one candidate, several, or none. This is an exposure screen, not an
+identifiability verdict: the evidence is listings and prose rather than file contents, so it
+cannot establish the uniqueness or the candidate-universe closure the protocol requires, and a
+component exposed once here is not thereby identified.
+
+No deposit among the 20 exposes a single candidate for all five components. Sixteen expose
+none at all for at least one of them. The component that is unexposed most often is the same
+one that is unreached in every deep-audit decision: 15 of the 20 deposits expose no candidate
+release or commit for the runs behind their reported figures, and only three expose exactly
+one, while task universes and evaluators are exposed several times over in 15 and 13 deposits
+respectively. The pattern in the four studies audited at
+decision level is not peculiar to them.
+
+Cross-adjudication also corrected this paper. Two studies' dispositions had been recorded
+against each other's titles; the second adjudicator disagreed on exactly those two rows and
+the evidence settles which way round they go. The aggregate counts are unchanged, because the
+error exchanged one \textsc{yes} for one \textsc{no}, but the rows were wrong and are
+corrected in the artifact.
+
+The first question is whose artifact the deposit is, and Table~\ref{tab:corpus} gives the
+resulting disposition. Five of the 25 locators are not the
+paper's own: three are third-party agents or models the paper evaluated against or built on,
+one is a GitHub account path naming no repository, and one is a set of applications the paper
+scanned. A locator is not a release, and counting these five as artifacts would credit their
+studies with evidence belonging to someone else.
+
+\begin{table}[t]
+\caption{Disposition of the 25 rostered papers that expose an artifact locator, of which 20
+expose one of their own. Counts are the disposition of this cohort, not a rate in the
+literature. \textsc{not found} is not absence: the judgement reads the deposit's listing and
+prose. \textsc{present elsewhere} is one study whose traces, predictions and harness logs are
+published as linked downloads rather than inside the repository.}
+\label{tab:corpus}
+\begin{tabular}{lr}
+\toprule
+Disposition among the 25 locator-exposing papers & Papers \\
+\midrule
+Locator is not the paper's own artifact & 5 \\
+Own artifact, run outputs \textsc{present} & 12 \\
+Own artifact, run outputs \textsc{present elsewhere} & 1 \\
+Own artifact, run outputs \textsc{not found} & 4 \\
+Own artifact, \textsc{undetermined} (opaque archive) & 2 \\
+Own artifact, deposit \textsc{unreachable} & 1 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Among the 20 papers in this cohort that expose an artifact of their own, 13 publish run
+outputs. One further deposit is unreachable, two hold only archives whose names decide
+nothing, and four publish none. These are counts within the frozen roster and among papers
+with completed disposition coding; they are not estimates of how often coding-agent studies
+publish run outputs.
+
+Of the 22 rostered papers exposing no locator at all, 10 are determinate -- the full text was
+read and names no artifact host -- and 12 are undetermined, 9 because no open full text was
+located and 3 because the located text was not retrievable. A paywall is not counted as an
+absence.

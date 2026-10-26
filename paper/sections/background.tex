@@ -1,0 +1,54 @@
+\section{Background}
+\label{sec:background}
+
+\subsection{Coding-agent evaluation and its artifacts}
+
+A coding agent takes a repository and a natural-language maintenance task -- typically a
+GitHub issue~\cite{SweAgentAgent2024,DemystifyingLlmBased2025} -- and produces a change to
+that repository, judged by whether the project's
+tests pass afterwards. Evaluations of such agents report aggregate rates over a fixed task
+set: a percentage resolved, a proportion of empty patches, a best-of-$k$ curve.
+
+Each reported rate rests on a chain of per-task records: which tasks were in scope, what the
+agent produced for each, how each output was evaluated, and how outcomes that were neither
+success nor failure -- timeouts, empty generations, runs that never started -- were treated.
+The rate is a summary of that chain. Recovering the rate from released evidence requires the
+chain, not the summary.
+
+\subsection{What availability means for a run-level claim}
+
+Artifact availability is usually treated as a repository link. For a run-level claim it is
+finer. Each required element of the chain is a separate item with its own state, and a study
+can be complete in one and empty in another: released patches with no evaluation outcomes,
+released outcomes with no terminal classification, released everything with no statement of
+which release the paper's table reports.
+
+We use a six-state item vocabulary under a precedence, assigned per required item rather
+than per study. Two states describe retrieved bytes: one where an independently computed
+digest matches a recorded immutable digest under the same algorithm and canonical scope, one
+where the complete bytes arrived but nothing verifies them. Four describe distinct reasons
+for absence -- access is restricted, release is declared not to have happened, a locator was
+attempted and returned no complete closure, or no locator for the item exists at all. The
+last two are the ones most easily confused, and they are not the same: one is a study whose
+artifact cannot be pulled, the other a study that published nothing to pull.
+
+The distinctions are not bookkeeping. Collapsing \emph{attempted and incomplete} into
+\emph{never published} would let a paywall read as a finding, and collapsing \emph{complete
+bytes} into \emph{verified bytes} would let an unpinned download read as an identity check.
+
+\subsection{Reproduction, transfer, and what blocks each}
+
+Two questions are separable. Source reproduction asks whether a published comparison can be
+re-derived under its own captured protocol. Protocol transfer asks whether a different,
+compatible protocol applied to the same raw evidence would change the comparison's outcome.
+
+Transfer needs the source's raw per-task evidence and a binding from that evidence to the
+claim it supports, because the transferred estimate is projected back through the source's
+own decision semantics. A source-side gap in a reported rule does not by itself end the
+transfer question -- a frozen completion can become a new target protocol -- but a missing
+binding does, because there is then no established mapping from released evidence to the
+claim being transferred.
+
+This paper does not evaluate whether transfers reverse published conclusions. The tier-two
+sample was drawn, but its compatibility analysis was not executed, so transfer applicability
+and reversal were not estimated.

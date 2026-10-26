@@ -1,0 +1,55 @@
+\section{Related Work}
+\label{sec:relatedwork}
+
+\subsection{Reproduction and replication studies in software engineering}
+
+Reproduction studies in software engineering typically re-execute a published technique and
+compare outcomes, reporting how many results hold. This work does not re-execute anything.
+It asks a prior question -- whether the released evidence would let a re-execution be checked
+against the original at all -- and answers it per evidence item rather than per study. The
+distinction matters because a study can fail a re-execution for reasons that are invisible
+when only the aggregate is compared, and can pass one while the correspondence between the
+release and the published table remains unestablished.
+
+\subsection{Artifact evaluation and availability badging}
+
+Artifact evaluation at software-engineering venues certifies that an artifact is available,
+functional, or reusable. Availability turns on retrievability -- the link resolves and the
+contents are what the paper describes. Twenty-five papers in this cohort expose at least one
+artifact locator. Twenty-four have a reachable locator disposition, while one paper's
+own-artifact deposit was unreachable. We did not apply any venue's badging
+rubric, so we do not claim these artifacts would earn a badge; we observe only that the
+property those rubrics centre on is one this cohort largely satisfies.
+
+The property it does not satisfy is a complete outcome-specific evidence chain. Thirteen of
+the 20 own-artifact papers in this cohort release per-run outputs, while every decision in the
+four deep-audit studies lacks at least one outcome-specific public candidate and therefore
+cannot establish a complete binding. A
+criterion asking for that mapping -- which release, which run set, which evaluator
+configuration, which task universe, which aggregation rule -- would separate the two, and
+retrievability does not.
+
+\subsection{Benchmark quality and contamination in coding-agent evaluation}
+
+A growing line of work audits the benchmarks these agents are evaluated on: insufficient
+test cases that let wrong patches pass, solution leakage in issue text, and contamination of
+task sets by model training data. Several such studies appear in our own cohort, since they
+are themselves published comparisons of coding agents~\cite{UtboostRigorousEvaluation2025,RevisitingSweBench2025}.
+
+That work asks whether the measuring instrument is sound. This paper asks whether the
+measurement's evidence trail is recoverable, and the two are independent: a benchmark can be
+flawless and a study's release still fail to say which run produced its table, or a benchmark
+can be contaminated in ways only recoverable per-run evidence would expose. Our bounded
+released-record checks are of the second kind: AutoCodeRover reports three repetitions of its
+base configuration, while its public new- and old-evaluation run reports expose different
+unbound candidate counts. This is an
+artifact observation, not an end-to-end recomputation.
+
+\subsection{Preregistration and specification drift}
+
+This audit uses dated design records: required-item vectors, the frozen roster, and the planned
+two-tier split and sampling seed were recorded before the outcomes they bear on were inspected.
+The latter produced a seeded draw but no tier-two compatibility results. We also
+report where our own specification moved -- the eligible-decision denominator changed three
+times as the eligibility rule was corrected -- because an audit that conceals its own drift
+is in no position to report anyone else's.

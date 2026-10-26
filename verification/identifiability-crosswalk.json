@@ -1,0 +1,726 @@
+{
+  "counts": {
+    "aggregation_rule": {
+      "NOT_REACHED": 6,
+      "PARTIAL": 14
+    },
+    "evaluator_and_configuration": {
+      "NOT_REACHED": 6,
+      "PARTIAL": 14
+    },
+    "release_set": {
+      "NOT_REACHED": 20
+    },
+    "run_output_set": {
+      "NOT_REACHED": 10,
+      "PARTIAL": 10
+    },
+    "task_universe": {
+      "DETERMINED": 14,
+      "NOT_REACHED": 6
+    }
+  },
+  "decisions_fully_determined_by_ledger": 0,
+  "findings_sha256": "d2a20d48b4fffc5446b3da29e429433321d7f0520cd07617fdec65c9aec64bf6",
+  "mapping_version": "v3-outcome-specific",
+  "protocol_sha256": "b594f7e8ca919972daff33f2a307c6687641655da6ae1bacf6479a6b18fade68",
+  "reading_rule": "Input coverage only. DETERMINED means every mapped kind the decision required was AVAILABLE in the ledger, not that the component is identified under the joint criterion. NOT_REQUIRED_BY_LEDGER means the ledger never asked, which is the absence of a question rather than an answer of absent. No verdict is implied by any row; verdicts are produced only under the frozen protocol, from components, and never inherited from these kind states.",
+  "rows": [
+    {
+      "components": {
+        "aggregation_rule": "PARTIAL",
+        "evaluator_and_configuration": "PARTIAL",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "NOT_REACHED",
+        "task_universe": "DETERMINED"
+      },
+      "condition_group": "SWEAGENT",
+      "decision_id": "CMP-001",
+      "immutable_digest_pinned": false,
+      "items": 10,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_NO_LOCATOR",
+        "ENVIRONMENT_IDENTITY": "ABSENT_NO_LOCATOR",
+        "EVALUATOR_OUTCOME": "ABSENT_NO_LOCATOR",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_NO_LOCATOR",
+        "PAIRING_BRIDGE": "ABSENT_NO_LOCATOR",
+        "PATCH_ARTIFACT": "ABSENT_NO_LOCATOR",
+        "PPM_PROTOCOL": "AVAILABLE",
+        "REPETITION_SET": "ABSENT_NO_LOCATOR",
+        "RESOURCE_CLOCK": "ABSENT_NO_LOCATOR",
+        "SEED": "ABSENT_NO_LOCATOR",
+        "TASK_MEMBERSHIP": "AVAILABLE",
+        "TERMINAL_MISSINGNESS": "ABSENT_NO_LOCATOR",
+        "UNCERTAINTY": "ABSENT_NO_LOCATOR"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "PARTIAL",
+        "evaluator_and_configuration": "PARTIAL",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "NOT_REACHED",
+        "task_universe": "DETERMINED"
+      },
+      "condition_group": "SWEAGENT",
+      "decision_id": "CMP-002",
+      "immutable_digest_pinned": false,
+      "items": 10,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_NO_LOCATOR",
+        "ENVIRONMENT_IDENTITY": "ABSENT_NO_LOCATOR",
+        "EVALUATOR_OUTCOME": "ABSENT_NO_LOCATOR",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_NO_LOCATOR",
+        "PAIRING_BRIDGE": "ABSENT_NO_LOCATOR",
+        "PATCH_ARTIFACT": "ABSENT_NO_LOCATOR",
+        "PPM_PROTOCOL": "AVAILABLE",
+        "REPETITION_SET": "ABSENT_NO_LOCATOR",
+        "RESOURCE_CLOCK": "ABSENT_NO_LOCATOR",
+        "SEED": "ABSENT_NO_LOCATOR",
+        "TASK_MEMBERSHIP": "AVAILABLE",
+        "TERMINAL_MISSINGNESS": "ABSENT_NO_LOCATOR",
+        "UNCERTAINTY": "ABSENT_NO_LOCATOR"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "PARTIAL",
+        "evaluator_and_configuration": "PARTIAL",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "NOT_REACHED",
+        "task_universe": "DETERMINED"
+      },
+      "condition_group": "SWEAGENT",
+      "decision_id": "CMP-003",
+      "immutable_digest_pinned": false,
+      "items": 12,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_NO_LOCATOR",
+        "ENVIRONMENT_IDENTITY": "ABSENT_NO_LOCATOR",
+        "EVALUATOR_OUTCOME": "ABSENT_NO_LOCATOR",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_NO_LOCATOR",
+        "PAIRING_BRIDGE": "ABSENT_NO_LOCATOR",
+        "PATCH_ARTIFACT": "ABSENT_NO_LOCATOR",
+        "PPM_PROTOCOL": "AVAILABLE",
+        "REPETITION_SET": "ABSENT_NO_LOCATOR",
+        "RESOURCE_CLOCK": "ABSENT_NO_LOCATOR",
+        "SEED": "ABSENT_NO_LOCATOR",
+        "TASK_MEMBERSHIP": "AVAILABLE",
+        "TERMINAL_MISSINGNESS": "ABSENT_NO_LOCATOR",
+        "UNCERTAINTY": "ABSENT_NO_LOCATOR"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "PARTIAL",
+        "evaluator_and_configuration": "PARTIAL",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "NOT_REACHED",
+        "task_universe": "DETERMINED"
+      },
+      "condition_group": "SWEAGENT",
+      "decision_id": "CMP-004",
+      "immutable_digest_pinned": false,
+      "items": 10,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_NO_LOCATOR",
+        "ENVIRONMENT_IDENTITY": "ABSENT_NO_LOCATOR",
+        "EVALUATOR_OUTCOME": "ABSENT_NO_LOCATOR",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_NO_LOCATOR",
+        "PAIRING_BRIDGE": "ABSENT_NO_LOCATOR",
+        "PATCH_ARTIFACT": "ABSENT_NO_LOCATOR",
+        "PPM_PROTOCOL": "AVAILABLE",
+        "REPETITION_SET": "ABSENT_NO_LOCATOR",
+        "RESOURCE_CLOCK": "ABSENT_NO_LOCATOR",
+        "SEED": "ABSENT_NO_LOCATOR",
+        "TASK_MEMBERSHIP": "AVAILABLE",
+        "TERMINAL_MISSINGNESS": "ABSENT_NO_LOCATOR",
+        "UNCERTAINTY": "ABSENT_NO_LOCATOR"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "NOT_REACHED",
+        "evaluator_and_configuration": "NOT_REACHED",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "NOT_REACHED",
+        "task_universe": "NOT_REACHED"
+      },
+      "condition_group": "SWEGYM_OPENHANDS",
+      "decision_id": "CMP-006",
+      "immutable_digest_pinned": false,
+      "items": 9,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "ABSENT_ATTEMPTED",
+        "EVALUATOR_OUTCOME": "ABSENT_ATTEMPTED",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PAIRING_BRIDGE": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "ABSENT_ATTEMPTED",
+        "PPM_PROTOCOL": "ABSENT_ATTEMPTED",
+        "REPETITION_SET": "ABSENT_ATTEMPTED",
+        "RESOURCE_CLOCK": "ABSENT_ATTEMPTED",
+        "SEED": "ABSENT_ATTEMPTED",
+        "TASK_MEMBERSHIP": "ABSENT_ATTEMPTED",
+        "TERMINAL_MISSINGNESS": "ABSENT_ATTEMPTED",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set",
+        "task_universe"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "NOT_REACHED",
+        "evaluator_and_configuration": "NOT_REACHED",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "NOT_REACHED",
+        "task_universe": "NOT_REACHED"
+      },
+      "condition_group": "SWEGYM_OPENHANDS",
+      "decision_id": "CMP-007",
+      "immutable_digest_pinned": false,
+      "items": 9,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "ABSENT_ATTEMPTED",
+        "EVALUATOR_OUTCOME": "ABSENT_ATTEMPTED",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PAIRING_BRIDGE": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "ABSENT_ATTEMPTED",
+        "PPM_PROTOCOL": "ABSENT_ATTEMPTED",
+        "REPETITION_SET": "ABSENT_ATTEMPTED",
+        "RESOURCE_CLOCK": "ABSENT_ATTEMPTED",
+        "SEED": "ABSENT_ATTEMPTED",
+        "TASK_MEMBERSHIP": "ABSENT_ATTEMPTED",
+        "TERMINAL_MISSINGNESS": "ABSENT_ATTEMPTED",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set",
+        "task_universe"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "NOT_REACHED",
+        "evaluator_and_configuration": "NOT_REACHED",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "NOT_REACHED",
+        "task_universe": "NOT_REACHED"
+      },
+      "condition_group": "SWEGYM_OPENHANDS",
+      "decision_id": "CMP-008",
+      "immutable_digest_pinned": false,
+      "items": 9,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "ABSENT_ATTEMPTED",
+        "EVALUATOR_OUTCOME": "ABSENT_ATTEMPTED",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PAIRING_BRIDGE": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "ABSENT_ATTEMPTED",
+        "PPM_PROTOCOL": "ABSENT_ATTEMPTED",
+        "REPETITION_SET": "ABSENT_ATTEMPTED",
+        "RESOURCE_CLOCK": "ABSENT_ATTEMPTED",
+        "SEED": "ABSENT_ATTEMPTED",
+        "TASK_MEMBERSHIP": "ABSENT_ATTEMPTED",
+        "TERMINAL_MISSINGNESS": "ABSENT_ATTEMPTED",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set",
+        "task_universe"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "NOT_REACHED",
+        "evaluator_and_configuration": "NOT_REACHED",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "NOT_REACHED",
+        "task_universe": "NOT_REACHED"
+      },
+      "condition_group": "SWEGYM_OPENHANDS",
+      "decision_id": "CMP-009",
+      "immutable_digest_pinned": false,
+      "items": 9,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "ABSENT_ATTEMPTED",
+        "EVALUATOR_OUTCOME": "ABSENT_ATTEMPTED",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PAIRING_BRIDGE": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "ABSENT_ATTEMPTED",
+        "PPM_PROTOCOL": "ABSENT_ATTEMPTED",
+        "REPETITION_SET": "ABSENT_ATTEMPTED",
+        "RESOURCE_CLOCK": "ABSENT_ATTEMPTED",
+        "SEED": "ABSENT_ATTEMPTED",
+        "TASK_MEMBERSHIP": "ABSENT_ATTEMPTED",
+        "TERMINAL_MISSINGNESS": "ABSENT_ATTEMPTED",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set",
+        "task_universe"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "NOT_REACHED",
+        "evaluator_and_configuration": "NOT_REACHED",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "NOT_REACHED",
+        "task_universe": "NOT_REACHED"
+      },
+      "condition_group": "SWEGYM_OPENHANDS",
+      "decision_id": "CMP-010",
+      "immutable_digest_pinned": false,
+      "items": 9,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "ABSENT_ATTEMPTED",
+        "EVALUATOR_OUTCOME": "ABSENT_ATTEMPTED",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PAIRING_BRIDGE": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "ABSENT_ATTEMPTED",
+        "PPM_PROTOCOL": "ABSENT_ATTEMPTED",
+        "REPETITION_SET": "ABSENT_ATTEMPTED",
+        "RESOURCE_CLOCK": "ABSENT_ATTEMPTED",
+        "SEED": "ABSENT_ATTEMPTED",
+        "TASK_MEMBERSHIP": "ABSENT_ATTEMPTED",
+        "TERMINAL_MISSINGNESS": "ABSENT_ATTEMPTED",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set",
+        "task_universe"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "NOT_REACHED",
+        "evaluator_and_configuration": "NOT_REACHED",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "NOT_REACHED",
+        "task_universe": "NOT_REACHED"
+      },
+      "condition_group": "SWEGYM_OPENHANDS",
+      "decision_id": "CMP-011",
+      "immutable_digest_pinned": false,
+      "items": 9,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "ABSENT_ATTEMPTED",
+        "EVALUATOR_OUTCOME": "ABSENT_ATTEMPTED",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PAIRING_BRIDGE": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "ABSENT_ATTEMPTED",
+        "PPM_PROTOCOL": "ABSENT_ATTEMPTED",
+        "REPETITION_SET": "ABSENT_ATTEMPTED",
+        "RESOURCE_CLOCK": "ABSENT_ATTEMPTED",
+        "SEED": "ABSENT_ATTEMPTED",
+        "TASK_MEMBERSHIP": "ABSENT_ATTEMPTED",
+        "TERMINAL_MISSINGNESS": "ABSENT_ATTEMPTED",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set",
+        "task_universe"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "PARTIAL",
+        "evaluator_and_configuration": "PARTIAL",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "PARTIAL",
+        "task_universe": "DETERMINED"
+      },
+      "condition_group": "SWEGYM_MOATLESS",
+      "decision_id": "CMP-012",
+      "immutable_digest_pinned": false,
+      "items": 9,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "ABSENT_ATTEMPTED",
+        "EVALUATOR_OUTCOME": "AVAILABLE",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PAIRING_BRIDGE": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "AVAILABLE",
+        "PPM_PROTOCOL": "AVAILABLE",
+        "REPETITION_SET": "AVAILABLE",
+        "RESOURCE_CLOCK": "INCOMPLETE",
+        "SEED": "ABSENT_ATTEMPTED",
+        "TASK_MEMBERSHIP": "AVAILABLE",
+        "TERMINAL_MISSINGNESS": "INCOMPLETE",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "PARTIAL",
+        "evaluator_and_configuration": "PARTIAL",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "PARTIAL",
+        "task_universe": "DETERMINED"
+      },
+      "condition_group": "SWEGYM_MOATLESS",
+      "decision_id": "CMP-013",
+      "immutable_digest_pinned": false,
+      "items": 9,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "ABSENT_ATTEMPTED",
+        "EVALUATOR_OUTCOME": "AVAILABLE",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PAIRING_BRIDGE": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "AVAILABLE",
+        "PPM_PROTOCOL": "AVAILABLE",
+        "REPETITION_SET": "AVAILABLE",
+        "RESOURCE_CLOCK": "INCOMPLETE",
+        "SEED": "ABSENT_ATTEMPTED",
+        "TASK_MEMBERSHIP": "AVAILABLE",
+        "TERMINAL_MISSINGNESS": "INCOMPLETE",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "PARTIAL",
+        "evaluator_and_configuration": "PARTIAL",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "PARTIAL",
+        "task_universe": "DETERMINED"
+      },
+      "condition_group": "AGENTLESS",
+      "decision_id": "CMP-018",
+      "immutable_digest_pinned": false,
+      "items": 12,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "ABSENT_ATTEMPTED",
+        "EVALUATOR_OUTCOME": "ABSENT_ATTEMPTED",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PAIRING_BRIDGE": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "AVAILABLE",
+        "PPM_PROTOCOL": "AVAILABLE",
+        "REPETITION_SET": "INCOMPLETE",
+        "RESOURCE_CLOCK": "ABSENT_ATTEMPTED",
+        "SEED": "ABSENT_ATTEMPTED",
+        "SELECTION_CANDIDATES": "AVAILABLE",
+        "TASK_MEMBERSHIP": "AVAILABLE",
+        "TERMINAL_MISSINGNESS": "ABSENT_ATTEMPTED",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "PARTIAL",
+        "evaluator_and_configuration": "PARTIAL",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "PARTIAL",
+        "task_universe": "DETERMINED"
+      },
+      "condition_group": "AGENTLESS",
+      "decision_id": "CMP-019",
+      "immutable_digest_pinned": false,
+      "items": 12,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "ABSENT_ATTEMPTED",
+        "EVALUATOR_OUTCOME": "ABSENT_ATTEMPTED",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PAIRING_BRIDGE": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "AVAILABLE",
+        "PPM_PROTOCOL": "AVAILABLE",
+        "REPETITION_SET": "INCOMPLETE",
+        "RESOURCE_CLOCK": "ABSENT_ATTEMPTED",
+        "SEED": "ABSENT_ATTEMPTED",
+        "SELECTION_CANDIDATES": "AVAILABLE",
+        "TASK_MEMBERSHIP": "AVAILABLE",
+        "TERMINAL_MISSINGNESS": "ABSENT_ATTEMPTED",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "PARTIAL",
+        "evaluator_and_configuration": "PARTIAL",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "PARTIAL",
+        "task_universe": "DETERMINED"
+      },
+      "condition_group": "AGENTLESS",
+      "decision_id": "CMP-021",
+      "immutable_digest_pinned": false,
+      "items": 12,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "ABSENT_ATTEMPTED",
+        "EVALUATOR_OUTCOME": "ABSENT_ATTEMPTED",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PAIRING_BRIDGE": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "AVAILABLE",
+        "PPM_PROTOCOL": "AVAILABLE",
+        "REPETITION_SET": "INCOMPLETE",
+        "RESOURCE_CLOCK": "ABSENT_ATTEMPTED",
+        "SEED": "ABSENT_ATTEMPTED",
+        "SELECTION_CANDIDATES": "AVAILABLE",
+        "TASK_MEMBERSHIP": "AVAILABLE",
+        "TERMINAL_MISSINGNESS": "ABSENT_ATTEMPTED",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "PARTIAL",
+        "evaluator_and_configuration": "PARTIAL",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "PARTIAL",
+        "task_universe": "DETERMINED"
+      },
+      "condition_group": "AGENTLESS",
+      "decision_id": "CMP-022",
+      "immutable_digest_pinned": false,
+      "items": 12,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "ABSENT_ATTEMPTED",
+        "EVALUATOR_OUTCOME": "ABSENT_ATTEMPTED",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PAIRING_BRIDGE": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "AVAILABLE",
+        "PPM_PROTOCOL": "AVAILABLE",
+        "REPETITION_SET": "INCOMPLETE",
+        "RESOURCE_CLOCK": "ABSENT_ATTEMPTED",
+        "SEED": "ABSENT_ATTEMPTED",
+        "SELECTION_CANDIDATES": "AVAILABLE",
+        "TASK_MEMBERSHIP": "AVAILABLE",
+        "TERMINAL_MISSINGNESS": "ABSENT_ATTEMPTED",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "PARTIAL",
+        "evaluator_and_configuration": "PARTIAL",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "PARTIAL",
+        "task_universe": "DETERMINED"
+      },
+      "condition_group": "AGENTLESS",
+      "decision_id": "CMP-024",
+      "immutable_digest_pinned": false,
+      "items": 12,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "ABSENT_ATTEMPTED",
+        "EVALUATOR_OUTCOME": "ABSENT_ATTEMPTED",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PAIRING_BRIDGE": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "AVAILABLE",
+        "PPM_PROTOCOL": "AVAILABLE",
+        "REPETITION_SET": "INCOMPLETE",
+        "RESOURCE_CLOCK": "ABSENT_ATTEMPTED",
+        "SEED": "ABSENT_ATTEMPTED",
+        "SELECTION_CANDIDATES": "AVAILABLE",
+        "TASK_MEMBERSHIP": "AVAILABLE",
+        "TERMINAL_MISSINGNESS": "ABSENT_ATTEMPTED",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "PARTIAL",
+        "evaluator_and_configuration": "PARTIAL",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "PARTIAL",
+        "task_universe": "DETERMINED"
+      },
+      "condition_group": "AUTOCODEROVER",
+      "decision_id": "CMP-034",
+      "immutable_digest_pinned": false,
+      "items": 11,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "INCOMPLETE",
+        "EVALUATOR_OUTCOME": "AVAILABLE",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PAIRING_BRIDGE": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "AVAILABLE",
+        "PPM_PROTOCOL": "AVAILABLE",
+        "REPETITION_SET": "INCOMPLETE",
+        "RESOURCE_CLOCK": "AVAILABLE",
+        "SEED": "ABSENT_ATTEMPTED",
+        "TASK_MEMBERSHIP": "AVAILABLE",
+        "TERMINAL_MISSINGNESS": "AVAILABLE",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "PARTIAL",
+        "evaluator_and_configuration": "PARTIAL",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "PARTIAL",
+        "task_universe": "DETERMINED"
+      },
+      "condition_group": "AUTOCODEROVER",
+      "decision_id": "CMP-035",
+      "immutable_digest_pinned": false,
+      "items": 12,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "INCOMPLETE",
+        "EVALUATOR_OUTCOME": "AVAILABLE",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "HUMAN_LABEL": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "AVAILABLE",
+        "PPM_PROTOCOL": "AVAILABLE",
+        "REPETITION_SET": "INCOMPLETE",
+        "RESOURCE_CLOCK": "AVAILABLE",
+        "SEED": "ABSENT_ATTEMPTED",
+        "TASK_MEMBERSHIP": "AVAILABLE",
+        "TERMINAL_MISSINGNESS": "AVAILABLE",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ]
+    },
+    {
+      "components": {
+        "aggregation_rule": "PARTIAL",
+        "evaluator_and_configuration": "PARTIAL",
+        "release_set": "NOT_REACHED",
+        "run_output_set": "PARTIAL",
+        "task_universe": "DETERMINED"
+      },
+      "condition_group": "SWEGYM_MOATLESS",
+      "decision_id": "CMP-041",
+      "immutable_digest_pinned": false,
+      "items": 9,
+      "kind_states": {
+        "ANALYSIS_BINDING": "ABSENT_ATTEMPTED",
+        "ENVIRONMENT_IDENTITY": "ABSENT_ATTEMPTED",
+        "EVALUATOR_OUTCOME": "AVAILABLE",
+        "EXPECTED_RUN_AUTHORITY": "ABSENT_ATTEMPTED",
+        "PATCH_ARTIFACT": "AVAILABLE",
+        "PPM_PROTOCOL": "AVAILABLE",
+        "REPETITION_SET": "AVAILABLE",
+        "RESOURCE_CLOCK": "INCOMPLETE",
+        "SEED": "ABSENT_ATTEMPTED",
+        "SELECTION_CANDIDATES": "AVAILABLE",
+        "TASK_MEMBERSHIP": "AVAILABLE",
+        "TERMINAL_MISSINGNESS": "INCOMPLETE",
+        "UNCERTAINTY": "ABSENT_ATTEMPTED"
+      },
+      "needs_artifact_reread": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ]
+    }
+  ],
+  "schema": "identifiability-crosswalk.v2",
+  "scientific_claims": false,
+  "unmapped_kinds": [
+    "RESOURCE_CLOCK"
+  ]
+}

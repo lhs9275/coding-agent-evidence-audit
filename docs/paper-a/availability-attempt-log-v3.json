@@ -1,0 +1,61 @@
+{
+  "assigns_item_states": false,
+  "attempts": [
+    {
+      "attempted_at": "2026-08-07T16:19:51Z",
+      "comparisons": [
+        "CMP-012",
+        "CMP-013",
+        "CMP-041"
+      ],
+      "content_type": "application/zip",
+      "declared_content_length": 41776610,
+      "entity_id": "ENT-PAPER-002",
+      "http_status": 200,
+      "locator_class": "RUN",
+      "locator_id": "AMEND-SWEGYM-MOATLESS-32B-EXP0",
+      "method": "GET",
+      "recorded_in_register": false,
+      "retrieval_status": "RETRIEVED",
+      "retrieved": true,
+      "retrieved_bytes": 41776610,
+      "retrieved_bytes_sha256": "982f20e207c97da70fe1cd4884de222ac146484ee9b187cbe746032846dc19e8",
+      "stored_at": "/cephfs/lab/users/2022810061/Paper-A-TOSEM/avail-bytes/AMEND-SWEGYM-MOATLESS-32B-EXP0.bin",
+      "study": "SWE-Gym",
+      "url": "https://huggingface.co/datasets/SWE-Gym/MoatlessTools-Sampled-Trajectories/resolve/51ba9a7f38fed087bcb1a11b3d51972ed72a8317/32b/release-32b-exp0-temp_0.0-fp8_0.zip"
+    },
+    {
+      "attempted_at": "2026-08-07T16:19:57Z",
+      "comparisons": [
+        "CMP-012",
+        "CMP-013",
+        "CMP-041"
+      ],
+      "content_type": "application/zip",
+      "declared_content_length": 179567419,
+      "entity_id": "ENT-PAPER-002",
+      "http_status": 200,
+      "locator_class": "RUN",
+      "locator_id": "AMEND-SWEGYM-MOATLESS-7B-ABLATIONS",
+      "method": "GET",
+      "recorded_in_register": false,
+      "retrieval_status": "RETRIEVED",
+      "retrieved": true,
+      "retrieved_bytes": 179567419,
+      "retrieved_bytes_sha256": "ce11b7ac2d8eb1963786db67e9710f61df26fdc8e93814fd6055ea549be82896",
+      "stored_at": "/cephfs/lab/users/2022810061/Paper-A-TOSEM/avail-bytes/AMEND-SWEGYM-MOATLESS-7B-ABLATIONS.bin",
+      "study": "SWE-Gym",
+      "url": "https://huggingface.co/datasets/SWE-Gym/MoatlessTools-Sampled-Trajectories/resolve/51ba9a7f38fed087bcb1a11b3d51972ed72a8317/7b/ablations.zip"
+    }
+  ],
+  "class_conditional_reading": "A NO-BYTES on a PAPER-class locator is a statement about this automated client's transport, not about the artifact. Publisher endpoints refuse scripted clients; the register records these same locators as VERIFIED from a human access. Nothing turns on the difference, because PREREG-AVAIL-001 forbids a paper locator from establishing an artifact item state in either direction.",
+  "document_id": "AVAIL-ATTEMPT-LOG-V1",
+  "inputs": {
+    "inventory": "/cephfs/lab/users/2022810061/Paper-A-TOSEM/repository/docs/paper-a/availability-locator-inventory-v3.json",
+    "inventory_sha256": "54f86efec73dcb78d9cb2a78d79213906ebbb9b2d31c2151f4d405ba0a0e26ea"
+  },
+  "reading_rule": "retrieval_status is the ART-010/ART-011 retrieval vocabulary: RETRIEVED, NO-BYTES, or NO-PUBLIC-LOCATOR. NOT-SCHEDULED means the inventory did not schedule a body read for this locator, which is neither of those and cannot be read as either. A 200 with NOT-SCHEDULED establishes reachability only.",
+  "restricted_to": null,
+  "schema": "availability-attempt-log.v1",
+  "scientific_claims": false
+}

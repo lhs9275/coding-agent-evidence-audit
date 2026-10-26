@@ -1,0 +1,1876 @@
+{
+  "candidates_sha256": "8700b101ea1a2fb32c9b4823be0fd70f4a670f5ff3a790ceb010c0e443532a12",
+  "condition_group_level": {
+    "AGENTLESS": "NOT_IDENTIFIED",
+    "AUTOCODEROVER": "NOT_IDENTIFIED",
+    "SWEAGENT": "NOT_IDENTIFIED",
+    "SWEGYM_MOATLESS": "NOT_IDENTIFIED",
+    "SWEGYM_OPENHANDS": "NOT_IDENTIFIED"
+  },
+  "counts": {
+    "UNIDENTIFIED": 20
+  },
+  "crosswalk_sha256": "13527aadbb0d53219a238476bbea029d4af8aec40c4e5744d5056886f8cda99b",
+  "protocol_sha256": "b594f7e8ca919972daff33f2a307c6687641655da6ae1bacf6479a6b18fade68",
+  "reading_rule": "A verdict states whether the object that produced a reported number can be determined from the published record without using that number to choose. AMBIGUOUS is not a claim that the study is wrong, and UNIDENTIFIED is not a claim that no artifact exists: it means at least one component has no enumerable candidate in what was published.",
+  "schema": "identifiability-verdicts.v2",
+  "scientific_claims": true,
+  "study_level": {
+    "AGENTLESS": "NOT_IDENTIFIED",
+    "AUTOCODEROVER": "NOT_IDENTIFIED",
+    "SWEAGENT": "NOT_IDENTIFIED",
+    "SWEGYM": "NOT_IDENTIFIED"
+  },
+  "verdicts": [
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 1,
+        "release_set": 0,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "scheduled_attempt_count",
+            "run_selection",
+            "cross-system_pairing"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a scoring procedure",
+          "candidates": [
+            "SRC-SUPP-001.bin:repo/evaluation/evaluation.py + SRC-SUPP-001.bin:repo/evaluation/run_eval.sh"
+          ],
+          "evidence": "outcome-specific scoring program/procedure; result products excluded"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "code-snapshot:SRC-SUPP-001.bin@sha256=97f8d581830bd64459fbdc590f3e8b48f51a7f24e08759d86b63e25bc7846216",
+            "source-record:AUD-RUN-006:10-open-releases-with-zero-assets"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "PATCH_ARTIFACT",
+            "EVALUATOR_OUTCOME"
+          ],
+          "outcome_profile": "MACHINE_RESOLUTION_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-SUPP-001.bin:task-id-set/sha256=ddfea339bcfbdd66f03b4dd27f0a31170e71a2169f7e73c9bbae5b5f2f29f84b;n=2294"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "release_set",
+        "run_output_set"
+      ],
+      "condition_group": "SWEAGENT",
+      "decision_id": "CMP-001",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "MACHINE_RESOLUTION_RATE",
+      "serving_artifacts": [
+        "SRC-SUPP-001.bin",
+        "SRC-DATA-002-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "SWEAGENT",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 1,
+        "release_set": 0,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "scheduled_attempt_count",
+            "run_selection",
+            "cross-system_pairing"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a scoring procedure",
+          "candidates": [
+            "SRC-SUPP-001.bin:repo/evaluation/evaluation.py + SRC-SUPP-001.bin:repo/evaluation/run_eval.sh"
+          ],
+          "evidence": "outcome-specific scoring program/procedure; result products excluded"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "code-snapshot:SRC-SUPP-001.bin@sha256=97f8d581830bd64459fbdc590f3e8b48f51a7f24e08759d86b63e25bc7846216",
+            "source-record:AUD-RUN-006:10-open-releases-with-zero-assets"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "PATCH_ARTIFACT",
+            "EVALUATOR_OUTCOME"
+          ],
+          "outcome_profile": "MACHINE_RESOLUTION_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-SUPP-001.bin:task-id-set/sha256=6b9850decb64f71aaed19d394195eb254b666a4abe7f113365195b3e4de2b450;n=300"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "release_set",
+        "run_output_set"
+      ],
+      "condition_group": "SWEAGENT",
+      "decision_id": "CMP-002",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "MACHINE_RESOLUTION_RATE",
+      "serving_artifacts": [
+        "SRC-SUPP-001.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "SWEAGENT",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 1,
+        "release_set": 0,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "scheduled_attempt_count",
+            "run_selection",
+            "price_date_normalization"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a scoring procedure",
+          "candidates": [
+            "SRC-SUPP-001.bin:repo/evaluation/evaluation.py + SRC-SUPP-001.bin:repo/evaluation/run_eval.sh"
+          ],
+          "evidence": "outcome-specific scoring program/procedure; result products excluded"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "code-snapshot:SRC-SUPP-001.bin@sha256=97f8d581830bd64459fbdc590f3e8b48f51a7f24e08759d86b63e25bc7846216",
+            "source-record:AUD-RUN-006:10-open-releases-with-zero-assets"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "RESOURCE_CLOCK",
+            "EVALUATOR_OUTCOME"
+          ],
+          "outcome_profile": "CONDITIONAL_API_COST"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-SUPP-001.bin:task-id-set/sha256=6b9850decb64f71aaed19d394195eb254b666a4abe7f113365195b3e4de2b450;n=300"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "release_set",
+        "run_output_set"
+      ],
+      "condition_group": "SWEAGENT",
+      "decision_id": "CMP-003",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "CONDITIONAL_API_COST",
+      "serving_artifacts": [
+        "SRC-SUPP-001.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "SWEAGENT",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 1,
+        "release_set": 0,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "scheduled_attempt_count",
+            "run_selection",
+            "stochastic_pairing"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a scoring procedure",
+          "candidates": [
+            "SRC-SUPP-001.bin:repo/evaluation/evaluation.py + SRC-SUPP-001.bin:repo/evaluation/run_eval.sh"
+          ],
+          "evidence": "outcome-specific scoring program/procedure; result products excluded"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "code-snapshot:SRC-SUPP-001.bin@sha256=97f8d581830bd64459fbdc590f3e8b48f51a7f24e08759d86b63e25bc7846216",
+            "source-record:AUD-RUN-006:10-open-releases-with-zero-assets"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "PATCH_ARTIFACT",
+            "EVALUATOR_OUTCOME"
+          ],
+          "outcome_profile": "MACHINE_RESOLUTION_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-SUPP-001.bin:task-id-set/sha256=6b9850decb64f71aaed19d394195eb254b666a4abe7f113365195b3e4de2b450;n=300"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "release_set",
+        "run_output_set"
+      ],
+      "condition_group": "SWEAGENT",
+      "decision_id": "CMP-004",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "MACHINE_RESOLUTION_RATE",
+      "serving_artifacts": [
+        "SRC-SUPP-001.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "SWEAGENT",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 0,
+        "release_set": 0,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "evaluation_repetitions",
+            "terminal_missingness",
+            "uncertainty_definition"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a scoring procedure",
+          "candidates": [],
+          "evidence": "outcome-specific scoring program/procedure; result products excluded"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-14B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-32B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-32B-Verifier@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-7B-Agent@UNPINNED"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "PATCH_ARTIFACT",
+            "EVALUATOR_OUTCOME"
+          ],
+          "outcome_profile": "MACHINE_RESOLUTION_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-DATA-003-TEST.bin:task-id-set/sha256=6b9850decb64f71aaed19d394195eb254b666a4abe7f113365195b3e4de2b450;n=300"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ],
+      "condition_group": "SWEGYM_OPENHANDS",
+      "decision_id": "CMP-006",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "MACHINE_RESOLUTION_RATE",
+      "serving_artifacts": [
+        "AMEND-SWEGYM-HF-MODELS.bin",
+        "AMEND-SWEGYM-HF-ORG.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-8RUNS.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-ZERO.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT0.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-ZERO.bin",
+        "AMEND-SWEGYM-OPENHANDS-SAMPLED.bin",
+        "AMEND-SWEGYM-OPENHANDS-VERIFIER.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "SWEGYM",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 0,
+        "release_set": 0,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "evaluation_repetitions",
+            "terminal_missingness",
+            "uncertainty_definition"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a scoring procedure",
+          "candidates": [],
+          "evidence": "outcome-specific scoring program/procedure; result products excluded"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-14B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-32B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-32B-Verifier@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-7B-Agent@UNPINNED"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "PATCH_ARTIFACT",
+            "EVALUATOR_OUTCOME"
+          ],
+          "outcome_profile": "MACHINE_RESOLUTION_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-DATA-004-TEST.bin:task-id-set/sha256=a6b0fd7c8c2969a0eef892e032250adcfa6d32362d395c246930e61b575ac9b9;n=500"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ],
+      "condition_group": "SWEGYM_OPENHANDS",
+      "decision_id": "CMP-007",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "MACHINE_RESOLUTION_RATE",
+      "serving_artifacts": [
+        "AMEND-SWEGYM-HF-MODELS.bin",
+        "AMEND-SWEGYM-HF-ORG.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-8RUNS.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-ZERO.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT0.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-ZERO.bin",
+        "AMEND-SWEGYM-OPENHANDS-SAMPLED.bin",
+        "AMEND-SWEGYM-OPENHANDS-VERIFIER.bin",
+        "SRC-DATA-004-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "SWEGYM",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 1,
+        "release_set": 0,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "terminal_missingness",
+            "infrastructure_failure_handling"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "BOUND",
+          "binding_evidence": "the outcome profile makes an external scorer inapplicable",
+          "candidates": [
+            "NOT_APPLICABLE:EMPTY_PATCH_RATE"
+          ],
+          "evidence": "no external evaluator applies to this direct classification outcome"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-14B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-32B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-32B-Verifier@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-7B-Agent@UNPINNED"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "PATCH_ARTIFACT"
+          ],
+          "outcome_profile": "EMPTY_PATCH_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-DATA-003-TEST.bin:task-id-set/sha256=6b9850decb64f71aaed19d394195eb254b666a4abe7f113365195b3e4de2b450;n=300"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "release_set",
+        "run_output_set"
+      ],
+      "condition_group": "SWEGYM_OPENHANDS",
+      "decision_id": "CMP-008",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "EMPTY_PATCH_RATE",
+      "serving_artifacts": [
+        "AMEND-SWEGYM-HF-MODELS.bin",
+        "AMEND-SWEGYM-HF-ORG.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-8RUNS.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-ZERO.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT0.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-ZERO.bin",
+        "AMEND-SWEGYM-OPENHANDS-SAMPLED.bin",
+        "AMEND-SWEGYM-OPENHANDS-VERIFIER.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "SWEGYM",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 1,
+        "release_set": 0,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "terminal_missingness",
+            "infrastructure_failure_handling"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "BOUND",
+          "binding_evidence": "the outcome profile makes an external scorer inapplicable",
+          "candidates": [
+            "NOT_APPLICABLE:EMPTY_PATCH_RATE"
+          ],
+          "evidence": "no external evaluator applies to this direct classification outcome"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-14B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-32B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-32B-Verifier@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-7B-Agent@UNPINNED"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "PATCH_ARTIFACT"
+          ],
+          "outcome_profile": "EMPTY_PATCH_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-DATA-004-TEST.bin:task-id-set/sha256=a6b0fd7c8c2969a0eef892e032250adcfa6d32362d395c246930e61b575ac9b9;n=500"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "release_set",
+        "run_output_set"
+      ],
+      "condition_group": "SWEGYM_OPENHANDS",
+      "decision_id": "CMP-009",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "EMPTY_PATCH_RATE",
+      "serving_artifacts": [
+        "AMEND-SWEGYM-HF-MODELS.bin",
+        "AMEND-SWEGYM-HF-ORG.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-8RUNS.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-ZERO.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT0.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-ZERO.bin",
+        "AMEND-SWEGYM-OPENHANDS-SAMPLED.bin",
+        "AMEND-SWEGYM-OPENHANDS-VERIFIER.bin",
+        "SRC-DATA-004-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "SWEGYM",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 1,
+        "release_set": 0,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "maximum_turn_interaction",
+            "terminal_missingness"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "BOUND",
+          "binding_evidence": "the outcome profile makes an external scorer inapplicable",
+          "candidates": [
+            "NOT_APPLICABLE:STUCK_LOOP_RATE"
+          ],
+          "evidence": "no external evaluator applies to this direct classification outcome"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-14B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-32B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-32B-Verifier@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-7B-Agent@UNPINNED"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "TERMINAL_MISSINGNESS"
+          ],
+          "outcome_profile": "STUCK_LOOP_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-DATA-003-TEST.bin:task-id-set/sha256=6b9850decb64f71aaed19d394195eb254b666a4abe7f113365195b3e4de2b450;n=300"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "release_set",
+        "run_output_set"
+      ],
+      "condition_group": "SWEGYM_OPENHANDS",
+      "decision_id": "CMP-010",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "STUCK_LOOP_RATE",
+      "serving_artifacts": [
+        "AMEND-SWEGYM-HF-MODELS.bin",
+        "AMEND-SWEGYM-HF-ORG.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-8RUNS.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-ZERO.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT0.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-ZERO.bin",
+        "AMEND-SWEGYM-OPENHANDS-SAMPLED.bin",
+        "AMEND-SWEGYM-OPENHANDS-VERIFIER.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "SWEGYM",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 1,
+        "release_set": 0,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "maximum_turn_interaction",
+            "terminal_missingness"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "BOUND",
+          "binding_evidence": "the outcome profile makes an external scorer inapplicable",
+          "candidates": [
+            "NOT_APPLICABLE:STUCK_LOOP_RATE"
+          ],
+          "evidence": "no external evaluator applies to this direct classification outcome"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-14B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-32B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-32B-Verifier@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/OpenHands-7B-Agent@UNPINNED"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "TERMINAL_MISSINGNESS"
+          ],
+          "outcome_profile": "STUCK_LOOP_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-DATA-004-TEST.bin:task-id-set/sha256=a6b0fd7c8c2969a0eef892e032250adcfa6d32362d395c246930e61b575ac9b9;n=500"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "release_set",
+        "run_output_set"
+      ],
+      "condition_group": "SWEGYM_OPENHANDS",
+      "decision_id": "CMP-011",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "STUCK_LOOP_RATE",
+      "serving_artifacts": [
+        "AMEND-SWEGYM-HF-MODELS.bin",
+        "AMEND-SWEGYM-HF-ORG.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-8RUNS.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-ZERO.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT0.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-ZERO.bin",
+        "AMEND-SWEGYM-OPENHANDS-SAMPLED.bin",
+        "AMEND-SWEGYM-OPENHANDS-VERIFIER.bin",
+        "SRC-DATA-004-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "SWEGYM",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 0,
+        "release_set": 0,
+        "run_output_set": 4,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "evaluation_repetitions",
+            "terminal_missingness"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a scoring procedure",
+          "candidates": [],
+          "evidence": "outcome-specific scoring program/procedure; result products excluded"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/MoatlessTools-32B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/MoatlessTools-32B-Verifier@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/MoatlessTools-7B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/MoatlessTools-7B-Verifier@UNPINNED"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [
+            "condition-indexed-run-output-set:AMEND-SWEGYM-MOATLESS-32B-EXP0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-exp0-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-32B-EXP0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-exp0-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-32B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-it1-v2-bench-lite-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-32B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-it1-v2-bench-lite-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-32B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-zero-bench-lite-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-32B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-zero-bench-lite-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-7B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it1-top2-fixed-temp_0.0-ep2-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-7B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it1-top2-fixed-temp_0.0-ep2-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-7B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-zero-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-7B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-zero-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-7B-ABLATIONS.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/ablations/release-bench-lite-qwen7b-v2-it0-top1-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-7B-ABLATIONS.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/ablations/release-bench-lite-qwen7b-v2-it0-top1-temp_0.0-fp8_0/preds.swebench_eval.jsonl",
+            "condition-indexed-run-output-set:AMEND-SWEGYM-MOATLESS-32B-EXP0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-exp0-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-32B-EXP0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-exp0-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-32B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-it1-v2-bench-lite-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-32B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-it1-v2-bench-lite-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-32B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-zero-bench-lite-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-32B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-zero-bench-lite-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-7B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it1-top2-fixed-temp_0.0-ep2-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-7B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it1-top2-fixed-temp_0.0-ep2-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-7B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-zero-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-7B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-zero-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-7B-ABLATIONS.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/ablations/release-bench-lite-qwen7b-v2-it0-top100-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-7B-ABLATIONS.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/ablations/release-bench-lite-qwen7b-v2-it0-top100-temp_0.0-fp8_0/preds.swebench_eval.jsonl",
+            "condition-indexed-run-output-set:AMEND-SWEGYM-MOATLESS-32B-EXP0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-exp0-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-32B-EXP0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-exp0-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-32B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-it1-v2-bench-lite-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-32B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-it1-v2-bench-lite-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-32B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-zero-bench-lite-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-32B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-zero-bench-lite-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-7B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it1-top2-fixed-temp_0.0-ep2-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-7B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it1-top2-fixed-temp_0.0-ep2-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-7B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-zero-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-7B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-zero-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-7B-ABLATIONS.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/ablations/release-bench-lite-qwen7b-v2-it0-top3-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-7B-ABLATIONS.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/ablations/release-bench-lite-qwen7b-v2-it0-top3-temp_0.0-fp8_0/preds.swebench_eval.jsonl",
+            "condition-indexed-run-output-set:AMEND-SWEGYM-MOATLESS-32B-EXP0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-exp0-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-32B-EXP0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-exp0-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-32B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-it1-v2-bench-lite-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-32B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-it1-v2-bench-lite-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-32B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-zero-bench-lite-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-32B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-zero-bench-lite-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-7B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it1-top2-fixed-temp_0.0-ep2-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-7B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it1-top2-fixed-temp_0.0-ep2-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-7B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-zero-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-7B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-zero-temp_0.0-fp8_0/preds.swebench_eval.jsonl || AMEND-SWEGYM-MOATLESS-7B-IT0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it0-top2-temp_0.0-fp8_0/preds.jsonl + AMEND-SWEGYM-MOATLESS-7B-IT0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it0-top2-temp_0.0-fp8_0/preds.swebench_eval.jsonl"
+          ],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [],
+          "outcome_profile": "MACHINE_RESOLUTION_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-DATA-003-TEST.bin:task-id-set/sha256=6b9850decb64f71aaed19d394195eb254b666a4abe7f113365195b3e4de2b450;n=300"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set"
+      ],
+      "condition_group": "SWEGYM_MOATLESS",
+      "decision_id": "CMP-012",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "MACHINE_RESOLUTION_RATE",
+      "serving_artifacts": [
+        "AMEND-SWEGYM-HF-MODELS.bin",
+        "AMEND-SWEGYM-HF-ORG.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-8RUNS.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-EXP0.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-ZERO.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-ABLATIONS.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT0.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-ZERO.bin",
+        "AMEND-SWEGYM-OPENHANDS-SAMPLED.bin",
+        "AMEND-SWEGYM-OPENHANDS-VERIFIER.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "SWEGYM",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 1,
+        "release_set": 0,
+        "run_output_set": 4,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "evaluation_repetitions",
+            "terminal_missingness"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "BOUND",
+          "binding_evidence": "the outcome profile makes an external scorer inapplicable",
+          "candidates": [
+            "NOT_APPLICABLE:EMPTY_PATCH_RATE"
+          ],
+          "evidence": "no external evaluator applies to this direct classification outcome"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/MoatlessTools-32B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/MoatlessTools-32B-Verifier@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/MoatlessTools-7B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/MoatlessTools-7B-Verifier@UNPINNED"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [
+            "condition-indexed-run-output-set:AMEND-SWEGYM-MOATLESS-32B-EXP0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-exp0-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-32B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-it1-v2-bench-lite-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-32B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-zero-bench-lite-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-7B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it1-top2-fixed-temp_0.0-ep2-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-7B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-zero-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-7B-ABLATIONS.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/ablations/release-bench-lite-qwen7b-v2-it0-top1-temp_0.0-fp8_0/preds.jsonl",
+            "condition-indexed-run-output-set:AMEND-SWEGYM-MOATLESS-32B-EXP0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-exp0-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-32B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-it1-v2-bench-lite-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-32B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-zero-bench-lite-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-7B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it1-top2-fixed-temp_0.0-ep2-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-7B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-zero-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-7B-ABLATIONS.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/ablations/release-bench-lite-qwen7b-v2-it0-top100-temp_0.0-fp8_0/preds.jsonl",
+            "condition-indexed-run-output-set:AMEND-SWEGYM-MOATLESS-32B-EXP0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-exp0-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-32B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-it1-v2-bench-lite-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-32B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-zero-bench-lite-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-7B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it1-top2-fixed-temp_0.0-ep2-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-7B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-zero-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-7B-ABLATIONS.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/ablations/release-bench-lite-qwen7b-v2-it0-top3-temp_0.0-fp8_0/preds.jsonl",
+            "condition-indexed-run-output-set:AMEND-SWEGYM-MOATLESS-32B-EXP0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-exp0-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-32B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-it1-v2-bench-lite-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-32B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/32b/release-32b-zero-bench-lite-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-7B-IT1.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it1-top2-fixed-temp_0.0-ep2-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-7B-ZERO.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-zero-temp_0.0-fp8_0/preds.jsonl || AMEND-SWEGYM-MOATLESS-7B-IT0.bin:home/jiayipan/code/24FA/release-SWE-Gym/release/7b/release-bench-lite-qwen7b-v2-it0-top2-temp_0.0-fp8_0/preds.jsonl"
+          ],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [],
+          "outcome_profile": "EMPTY_PATCH_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-DATA-003-TEST.bin:task-id-set/sha256=6b9850decb64f71aaed19d394195eb254b666a4abe7f113365195b3e4de2b450;n=300"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "release_set"
+      ],
+      "condition_group": "SWEGYM_MOATLESS",
+      "decision_id": "CMP-013",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "EMPTY_PATCH_RATE",
+      "serving_artifacts": [
+        "AMEND-SWEGYM-HF-MODELS.bin",
+        "AMEND-SWEGYM-HF-ORG.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-8RUNS.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-EXP0.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-ZERO.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-ABLATIONS.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT0.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-ZERO.bin",
+        "AMEND-SWEGYM-OPENHANDS-SAMPLED.bin",
+        "AMEND-SWEGYM-OPENHANDS-VERIFIER.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "SWEGYM",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 0,
+        "release_set": 0,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "comparator_run_selection",
+            "common_protocol",
+            "common_task_pairing"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a scoring procedure",
+          "candidates": [],
+          "evidence": "outcome-specific scoring program/procedure; result products excluded"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "release-tag:AMEND-AGENTLESS-RELEASES.bin:tag:v0.1.0",
+            "release-tag:AMEND-AGENTLESS-RELEASES.bin:tag:v1.5.0"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "EVALUATOR_OUTCOME"
+          ],
+          "outcome_profile": "SOURCE_COMPILED_RESOLUTION_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-DATA-003-TEST.bin:task-id-set/sha256=6b9850decb64f71aaed19d394195eb254b666a4abe7f113365195b3e4de2b450;n=300"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ],
+      "condition_group": "AGENTLESS",
+      "decision_id": "CMP-018",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "SOURCE_COMPILED_RESOLUTION_RATE",
+      "serving_artifacts": [
+        "AMEND-AGENTLESS-RELEASES.bin",
+        "AMEND-AGENTLESS-V010-GPT4O.bin",
+        "AMEND-AGENTLESS-V010-LOGS.bin",
+        "AMEND-AGENTLESS-V150-LITE.bin",
+        "AMEND-AGENTLESS-V150-VERIFIED.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "AGENTLESS",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 1,
+        "release_set": 0,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "provider_price_date",
+            "comparator_denominator",
+            "missing_cost_handling"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "BOUND",
+          "binding_evidence": "the outcome profile makes an external scorer inapplicable",
+          "candidates": [
+            "NOT_APPLICABLE:MEAN_API_COST"
+          ],
+          "evidence": "no external evaluator applies to this direct classification outcome"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "release-tag:AMEND-AGENTLESS-RELEASES.bin:tag:v0.1.0",
+            "release-tag:AMEND-AGENTLESS-RELEASES.bin:tag:v1.5.0"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "RESOURCE_CLOCK"
+          ],
+          "outcome_profile": "MEAN_API_COST"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-DATA-003-TEST.bin:task-id-set/sha256=6b9850decb64f71aaed19d394195eb254b666a4abe7f113365195b3e4de2b450;n=300"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "release_set",
+        "run_output_set"
+      ],
+      "condition_group": "AGENTLESS",
+      "decision_id": "CMP-019",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "MEAN_API_COST",
+      "serving_artifacts": [
+        "AMEND-AGENTLESS-RELEASES.bin",
+        "AMEND-AGENTLESS-V010-GPT4O.bin",
+        "AMEND-AGENTLESS-V010-LOGS.bin",
+        "AMEND-AGENTLESS-V150-LITE.bin",
+        "AMEND-AGENTLESS-V150-VERIFIED.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "AGENTLESS",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 0,
+        "release_set": 2,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "stochastic_pairing",
+            "sample_reuse",
+            "terminal_missingness"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a scoring procedure",
+          "candidates": [],
+          "evidence": "outcome-specific scoring program/procedure; result products excluded"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [
+            "V010",
+            "V150"
+          ],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "release-tag:AMEND-AGENTLESS-RELEASES.bin:tag:v0.1.0",
+            "release-tag:AMEND-AGENTLESS-RELEASES.bin:tag:v1.5.0"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "EVALUATOR_OUTCOME"
+          ],
+          "outcome_profile": "PATCH_SELECTION_RESOLUTION_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-DATA-003-TEST.bin:task-id-set/sha256=6b9850decb64f71aaed19d394195eb254b666a4abe7f113365195b3e4de2b450;n=300"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "run_output_set"
+      ],
+      "condition_group": "AGENTLESS",
+      "decision_id": "CMP-021",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "PATCH_SELECTION_RESOLUTION_RATE",
+      "serving_artifacts": [
+        "AMEND-AGENTLESS-RELEASES.bin",
+        "AMEND-AGENTLESS-V010-GPT4O.bin",
+        "AMEND-AGENTLESS-V010-LOGS.bin",
+        "AMEND-AGENTLESS-V150-LITE.bin",
+        "AMEND-AGENTLESS-V150-VERIFIED.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "AGENTLESS",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 0,
+        "release_set": 2,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "candidate_reuse",
+            "selection_ties",
+            "terminal_missingness"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a scoring procedure",
+          "candidates": [],
+          "evidence": "outcome-specific scoring program/procedure; result products excluded"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [
+            "V010",
+            "V150"
+          ],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "release-tag:AMEND-AGENTLESS-RELEASES.bin:tag:v0.1.0",
+            "release-tag:AMEND-AGENTLESS-RELEASES.bin:tag:v1.5.0"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "EVALUATOR_OUTCOME"
+          ],
+          "outcome_profile": "PATCH_FILTER_RESOLUTION_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-DATA-003-TEST.bin:task-id-set/sha256=6b9850decb64f71aaed19d394195eb254b666a4abe7f113365195b3e4de2b450;n=300"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "run_output_set"
+      ],
+      "condition_group": "AGENTLESS",
+      "decision_id": "CMP-022",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "PATCH_FILTER_RESOLUTION_RATE",
+      "serving_artifacts": [
+        "AMEND-AGENTLESS-RELEASES.bin",
+        "AMEND-AGENTLESS-V010-GPT4O.bin",
+        "AMEND-AGENTLESS-V010-LOGS.bin",
+        "AMEND-AGENTLESS-V150-LITE.bin",
+        "AMEND-AGENTLESS-V150-VERIFIED.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "AGENTLESS",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 0,
+        "release_set": 0,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "comparator_run_selection",
+            "common_protocol",
+            "common_task_pairing"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a scoring procedure",
+          "candidates": [],
+          "evidence": "outcome-specific scoring program/procedure; result products excluded"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "release-tag:AMEND-AGENTLESS-RELEASES.bin:tag:v0.1.0",
+            "release-tag:AMEND-AGENTLESS-RELEASES.bin:tag:v1.5.0"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [
+            "EVALUATOR_OUTCOME"
+          ],
+          "outcome_profile": "SOURCE_COMPILED_RESOLUTION_RATE"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-DATA-004-TEST.bin:task-id-set/sha256=a6b0fd7c8c2969a0eef892e032250adcfa6d32362d395c246930e61b575ac9b9;n=500"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ],
+      "condition_group": "AGENTLESS",
+      "decision_id": "CMP-024",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "SOURCE_COMPILED_RESOLUTION_RATE",
+      "serving_artifacts": [
+        "AMEND-AGENTLESS-RELEASES.bin",
+        "AMEND-AGENTLESS-V010-GPT4O.bin",
+        "AMEND-AGENTLESS-V010-LOGS.bin",
+        "AMEND-AGENTLESS-V150-LITE.bin",
+        "AMEND-AGENTLESS-V150-VERIFIED.bin",
+        "SRC-DATA-004-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "AGENTLESS",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 0,
+        "release_set": 1,
+        "run_output_set": 2,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "the source reports three repetitions and Pass@1 and cites the standard estimator, but does not state the selection/count presentation transform",
+          "missing_facets": [
+            "presentation_transform"
+          ],
+          "presentation_transform": "UNSPECIFIED_IN_SOURCE",
+          "rule_evidence": "CITED_STANDARD",
+          "source_reported_display_and_count": [
+            "19.00% (57)",
+            "22.00% (66)",
+            "26.00% (78)"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a scoring procedure",
+          "candidates": [],
+          "evidence": "the archived eval_helper is internal validation code; final reports invoke an external SWE-bench evaluator whose version/configuration is not archived"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [
+            "generation-revision-set:acr-run-1=a5f016d6f469626c8a40bfee1e24e4763f26f336,acr-run-2=178da19b921052c6258e48ce9d225f34bde45d2b,acr-run-3=9ac9e2bf1e3093c236f5126e10324caf7f81e0d1,acr-val-sbfl=a5f016d6f469626c8a40bfee1e24e4763f26f336"
+          ],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": []
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [
+            "new_eval_results:AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-run-1/predictions_for_swebench.json + AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-run-1/new_eval_results/report.json + AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-run-2/predictions_for_swebench.json + AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-run-2/new_eval_results/report.json + AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-run-3/predictions_for_swebench.json + AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-run-3/new_eval_results/report.json + AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-val-sbfl/predictions_for_swebench.json + AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-val-sbfl/new_eval_results/report.json",
+            "old_eval_results:AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-run-1/predictions_for_swebench.json + AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-run-1/old_eval_results/final_report.json + AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-run-2/predictions_for_swebench.json + AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-run-2/old_eval_results/final_report.json + AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-run-3/predictions_for_swebench.json + AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-run-3/old_eval_results/final_report.json + AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-val-sbfl/predictions_for_swebench.json + AMEND-ACR-REPO-TARBALL.bin:auto-code-rover-585d3e639aeda58ef0b6a151dd1cc2721a94d267/results/acr-val-sbfl/old_eval_results/final_report.json"
+          ],
+          "evidence": "complete outcome-bearing records required by this decision profile",
+          "missing_outcome_kinds": [],
+          "outcome_profile": "MACHINE_RESOLUTION_PAIR"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "AMEND-ACR-REPO-TARBALL.bin:task-id-set/sha256=6b9850decb64f71aaed19d394195eb254b666a4abe7f113365195b3e4de2b450;n=300"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "evaluator_and_configuration"
+      ],
+      "condition_group": "AUTOCODEROVER",
+      "decision_id": "CMP-034",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "MACHINE_RESOLUTION_PAIR",
+      "serving_artifacts": [
+        "AMEND-ACR-REPO-TARBALL.bin",
+        "AMEND-ACR-RESULTS.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "source_reconciliation": {
+        "binding": "UNBOUND",
+        "candidate_observations_status": "ENUMERATED_FROM_OUTCOME_SETS",
+        "candidate_outcome_counts": {
+          "new_evaluator": {
+            "acr-run-1": 54,
+            "acr-run-2": 57,
+            "acr-run-3": 57,
+            "acr-val-sbfl": 66
+          },
+          "old_evaluator": {
+            "acr-run-1": 48,
+            "acr-run-2": 47,
+            "acr-run-3": 50,
+            "acr-val-sbfl": 61
+          }
+        },
+        "full_bundle_arithmetic": {
+          "interpretation": "source-unbound bundle observation, not a selected effect",
+          "new_evaluator": "66 - mean(54,57,57) = 10",
+          "old_evaluator": "61 - mean(48,47,50) = 38/3"
+        },
+        "presentation_transform": "UNSPECIFIED_IN_SOURCE",
+        "raw_per_run_contrasts": {
+          "new_evaluator": [
+            9,
+            12
+          ],
+          "old_evaluator": [
+            11,
+            13,
+            14
+          ],
+          "overall_range": [
+            9,
+            14
+          ]
+        },
+        "reproduction": "NOT_TESTABLE",
+        "rule_evidence": "CITED_STANDARD",
+        "source_displayed_difference": 9
+      },
+      "state": "UNIDENTIFIED",
+      "study_id": "AUTOCODEROVER",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 1,
+        "evaluator_and_configuration": 0,
+        "release_set": 1,
+        "run_output_set": 0,
+        "task_universe": 2
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "analysis_unit": "TASK",
+          "binding": "BOUND",
+          "binding_evidence": "the paper states the three-run task-level OR estimand",
+          "candidates": [
+            "SRC-PAPER-016:any-plausible-and-any-correct-across-three"
+          ],
+          "evidence": "source-stated task-level OR rules and denominator",
+          "numerator": "ANY_SEMANTICALLY_CORRECT_ACROSS_THREE_RUNS",
+          "presentation_transform": "SOURCE_REPORTED_51_OF_78_AND_65.4_PERCENT",
+          "subset_membership": "ANY_PLAUSIBLE_ACROSS_THREE_RUNS"
+        },
+        "evaluator_and_configuration": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a scoring procedure",
+          "candidates": [],
+          "evidence": "reviewer count and third-party adjudication are stated, but the detailed semantic rubric and complete decision procedure are not published"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [
+            "generation-revision-set:acr-run-1=a5f016d6f469626c8a40bfee1e24e4763f26f336,acr-run-2=178da19b921052c6258e48ce9d225f34bde45d2b,acr-run-3=9ac9e2bf1e3093c236f5126e10324caf7f81e0d1"
+          ],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": []
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "no enumerable public task-level final semantic-label vector or patch-level semantic outcome record is published",
+          "missing_outcome_kinds": [
+            "HUMAN_LABEL"
+          ],
+          "outcome_profile": "HUMAN_SEMANTIC_TASK_OR"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "published-outcome-union:new_eval_results:sha256=d866cf019453e2fbe8a210b8519f78130255b488f65aefdb98bf97d507588af0;n=78",
+            "published-outcome-union:old_eval_results:sha256=ed79d02a184dd9c8111d862c64cfc9b71b872d60ef3018fdacdb422aee9fc919;n=67"
+          ],
+          "evidence": "two public machine-plausible union sets are enumerable but neither is source-bound to the reported 78-task denominator"
+        }
+      },
+      "components_without_candidates": [
+        "evaluator_and_configuration",
+        "run_output_set"
+      ],
+      "condition_group": "AUTOCODEROVER",
+      "decision_id": "CMP-035",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "HUMAN_SEMANTIC_TASK_OR",
+      "serving_artifacts": [
+        "AMEND-ACR-REPO-TARBALL.bin",
+        "AMEND-ACR-RESULTS.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "state": "UNIDENTIFIED",
+      "study_id": "AUTOCODEROVER",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    },
+    {
+      "admissible_tuples": null,
+      "candidate_counts": {
+        "aggregation_rule": 0,
+        "evaluator_and_configuration": 0,
+        "release_set": 0,
+        "run_output_set": 0,
+        "task_universe": 1
+      },
+      "compatibility_constraints_applied": false,
+      "compatibility_evaluation_status": "NOT_APPLICABLE_MISSING_COMPONENT",
+      "components": {
+        "aggregation_rule": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no complete public rule exists to bind",
+          "candidates": [],
+          "evidence": "no complete public aggregation and presentation rule candidate",
+          "missing_facets": [
+            "missing_run_positions",
+            "verifier_selection_ties"
+          ]
+        },
+        "evaluator_and_configuration": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a scoring procedure",
+          "candidates": [],
+          "evidence": "outcome-specific scoring program/procedure; result products excluded"
+        },
+        "release_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public release set",
+          "candidates": [],
+          "evidence": "decision-specific public release or generation-revision sets",
+          "partial_evidence": [
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/MoatlessTools-32B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/MoatlessTools-32B-Verifier@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/MoatlessTools-7B-Agent@UNPINNED",
+            "model:AMEND-SWEGYM-HF-MODELS.bin:SWE-Gym/MoatlessTools-7B-Verifier@UNPINNED"
+          ]
+        },
+        "run_output_set": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public outcome bundle",
+          "candidates": [],
+          "evidence": "eight patch/machine-outcome runs exist, but no published verifier-selected per-task outcome record forms the reported Best@k run-output set",
+          "missing_outcome_kinds": [],
+          "outcome_profile": "VERIFIER_SELECTED_BEST_AT_K"
+        },
+        "task_universe": {
+          "binding": "UNBOUND",
+          "binding_evidence": "no direct source mapping selects a public task-ID set",
+          "candidate_universe_status": "OPEN",
+          "candidates": [
+            "SRC-DATA-003-TEST.bin:task-id-set/sha256=6b9850decb64f71aaed19d394195eb254b666a4abe7f113365195b3e4de2b450;n=300"
+          ],
+          "evidence": "exact task-ID sets content-deduplicated within the decision profile"
+        }
+      },
+      "components_without_candidates": [
+        "aggregation_rule",
+        "evaluator_and_configuration",
+        "release_set",
+        "run_output_set"
+      ],
+      "condition_group": "SWEGYM_MOATLESS",
+      "decision_id": "CMP-041",
+      "enumerated_candidate_combinations": 0,
+      "narrowing_evidence": {
+        "ANALYSIS_BINDING": false,
+        "EXPECTED_RUN_AUTHORITY": false
+      },
+      "outcome_profile": "VERIFIER_SELECTED_BEST_AT_K",
+      "serving_artifacts": [
+        "AMEND-SWEGYM-HF-MODELS.bin",
+        "AMEND-SWEGYM-HF-ORG.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-8RUNS.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-EXP0.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-32B-ZERO.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-ABLATIONS.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT0.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-IT1.bin",
+        "AMEND-SWEGYM-MOATLESS-7B-ZERO.bin",
+        "AMEND-SWEGYM-OPENHANDS-SAMPLED.bin",
+        "AMEND-SWEGYM-OPENHANDS-VERIFIER.bin",
+        "SRC-DATA-003-TEST.bin"
+      ],
+      "source_reconciliation": {
+        "endpoint_conflict": "paper text and Figure 4 report conflicting endpoints",
+        "rule_evidence": "CONFLICTING"
+      },
+      "state": "UNIDENTIFIED",
+      "study_id": "SWEGYM",
+      "unevaluated_tuples": null,
+      "universe_closure": null,
+      "unknown_tuples": null
+    }
+  ]
+}

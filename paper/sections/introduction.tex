@@ -1,0 +1,81 @@
+\section{Introduction}
+\label{sec:introduction}
+
+A published coding-agent comparison reports numbers. A published coding-agent artifact
+contains bytes. This paper is about the join between them, and about what happens to a
+reproduction when the join is not recoverable from what was published.
+
+The two properties come apart in both directions. A paper-text audit can code a field as
+\emph{not reported} while the value sits in complete form inside the paper's proceedings
+supplement. A paper can release gigabytes of per-run evidence and never say which release
+produced which table cell. Neither situation is visible from the paper alone, and neither is
+visible from the artifact alone; separating them requires retrieving the artifact and
+limiting each check to what those bytes can establish.
+
+We do that in depth for four peer-reviewed studies, and we characterise a bounded discovery
+cohort of 47 around them. The four studies were inherited from an earlier project rather
+than sampled under a recoverable rule, so nothing here rests on their being
+representative. The audit is protocolized: a codebook fixed before any availability lookup
+was operationalized into a vector of 206 recorded evidence requirements spanning 20 published
+comparison decisions. The SWE-agent task manifest is checked against a pinned public revision;
+compatibility-axis extraction records the planned tier-two design and realized draw, while the
+per-class compatibility analysis was not executed. The
+audit retrieves 2.8\,GB of released artifacts and makes
+four bounded uses of them: SWE-agent task-manifest equality, selected-subset resolved/empty
+arithmetic for SWE-Gym Moatless, inspection of the Agentless generation archive, and
+AutoCodeRover run-report and candidate arithmetic. These operations are not a claim that
+every study's reported figures were fully recomputed. The 20 decisions are nested within the
+four studies and the 206 requirements within the decisions; the 2.8\,GB states the volume
+processed. None of the four counts is a sample size and they are not additive evidence.
+
+One self-imposed rule shapes everything that follows. A candidate may not be selected because
+its value matches the paper, so agreement found in our bounded released-record checks is
+inadmissible as evidence for an identifiability verdict: an archive whose arithmetic agrees
+with a figure is not thereby shown to be the archive the figure came from. Those checks are
+reported separately from the verdicts.
+
+\paragraph{What the audit finds.}
+Under the outcome-specific v2 re-adjudication, all 20 audited decisions are
+\textsc{unidentified} under a criterion recorded by digest: whether a reproducer can determine
+the release set, run-output set, evaluator and configuration, task universe and aggregation
+rule behind a reported figure without picking the candidate whose value matches it. None is
+\textsc{identified} or \textsc{compatibility not evaluated}, and all five condition groups
+across the four studies are \textsc{not identified}. The v1 artifact-global result of 18
+\textsc{unidentified} plus two \textsc{compatibility not evaluated} decisions is historical
+and superseded.
+The planned tier-two per-class compatibility analysis was not run, so no transfer verdict or
+per-class compatibility result is reported.
+
+In the discovery cohort, 25 of the 47 rostered papers expose an artifact locator and 20 of
+those locators are the paper's own; among those 20, 13 publish run outputs. We report those
+counts as the disposition of a bounded cohort, with the denominator named at every use, and
+not as a prevalence in the literature. The cohort's earlier prose-level binding column is
+withdrawn and replaced by five-component exposure judgements
+(\S\ref{sec:results:corpus}).
+
+\paragraph{What we do not claim.}
+We do not claim that these studies are wrong, or that their results fail to replicate. We
+did not re-run any agent. The audit measures what published evidence supports, not whether
+published conclusions are true. Tier-two attemptability was not judged.
+
+\paragraph{Contributions.}
+\begin{itemize}
+  \item A protocolized item-level availability audit of 20 comparison decisions nested in
+        four peer-reviewed studies, with every recorded evidence requirement assigned one of
+        six states under a precedence fixed before any availability lookup.
+  \item Bounded released-byte checks whose claims follow their operations: SWE-agent manifest
+        equality, selected SWE-Gym Moatless arithmetic, the Agentless generation archive, and
+        AutoCodeRover run-report and candidate arithmetic.
+  \item Provenance and disposition of a bounded discovery cohort of 47 rostered papers,
+        frozen before outcome coding, reported as cohort characterisation rather than as a
+        prevalence estimate, with what a pattern screen got wrong on the same evidence
+        (8 of 25) reported alongside.
+  \item A re-derivation of the frame the inherited four studies came from, and a measurement
+        of what the search that produced that inherited frame had missed.
+  \item A blind re-derivation of the target specification the audit is conditional on, by two
+        model axes with no access to this project's records, which corroborates
+        non-identification on 12 of the 14 decisions it could bind and locates three cells in
+        our own record that name more than one compared quantity; and an open-ended
+        re-derivation on a pre-drawn sample, which names three components that
+        re-derivation's own schema has no field for.
+\end{itemize}

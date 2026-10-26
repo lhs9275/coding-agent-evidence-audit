@@ -1,0 +1,8 @@
+  release_set                    {'NOT_REACHED': 20}
+  run_output_set                 {'NOT_REACHED': 10, 'PARTIAL': 10}
+  evaluator_and_configuration    {'PARTIAL': 14, 'NOT_REACHED': 6}
+  task_universe                  {'DETERMINED': 14, 'NOT_REACHED': 6}
+  aggregation_rule               {'PARTIAL': 14, 'NOT_REACHED': 6}
+
+0 of 20 decisions have all five components determined by the ledger alone
+wrote verification/identifiability-crosswalk.json

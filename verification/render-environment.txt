@@ -1,0 +1,5 @@
+Markdown==3.11.2
+weasyprint==70.0
+pypdf==6.21.2
+pytest==9.1.1
+Font: system Noto Sans CJK KR

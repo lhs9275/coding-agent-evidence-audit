@@ -1,0 +1,242 @@
+{
+  "analysis_timing": "POST_HOC_AFTER_ALL_NEGATIVE_RESULT",
+  "first_rung_with_an_identified_decision": null,
+  "protocol_sha256": "b594f7e8ca919972daff33f2a307c6687641655da6ae1bacf6479a6b18fade68",
+  "reading_rule": "R0 through R4 remove requirements cumulatively; R5 is a separate comparator that restores all components and removes uniqueness. No case supplies evidence the record does not contain. NOT_UNIQUE means the enumerated candidates do not single one out, and is not a claim that no combination survives the pairwise compatibility filter -- no projected compatibility filter was run here. AVAILABLE at R5 is the question the earlier component-wise criterion asked, included so the two criteria can be compared on the same records. R0 preserves the adjudicated state. At R1--R4 a singleton created by removing a coordinate remains COMPATIBILITY_NOT_EVALUATED unless it descends from an already compatible singleton; no projected compatibility is invented.",
+  "reported_values_consulted": false,
+  "rungs": [
+    {
+      "counts": {
+        "UNIDENTIFIED": 20
+      },
+      "description": "the criterion as adjudicated",
+      "identified_or_available": 0,
+      "per_decision": {
+        "CMP-001": "UNIDENTIFIED",
+        "CMP-002": "UNIDENTIFIED",
+        "CMP-003": "UNIDENTIFIED",
+        "CMP-004": "UNIDENTIFIED",
+        "CMP-006": "UNIDENTIFIED",
+        "CMP-007": "UNIDENTIFIED",
+        "CMP-008": "UNIDENTIFIED",
+        "CMP-009": "UNIDENTIFIED",
+        "CMP-010": "UNIDENTIFIED",
+        "CMP-011": "UNIDENTIFIED",
+        "CMP-012": "UNIDENTIFIED",
+        "CMP-013": "UNIDENTIFIED",
+        "CMP-018": "UNIDENTIFIED",
+        "CMP-019": "UNIDENTIFIED",
+        "CMP-021": "UNIDENTIFIED",
+        "CMP-022": "UNIDENTIFIED",
+        "CMP-024": "UNIDENTIFIED",
+        "CMP-034": "UNIDENTIFIED",
+        "CMP-035": "UNIDENTIFIED",
+        "CMP-041": "UNIDENTIFIED"
+      },
+      "requires": [
+        "release_set",
+        "run_output_set",
+        "evaluator_and_configuration",
+        "task_universe",
+        "aggregation_rule"
+      ],
+      "requires_closed_universe": true,
+      "requires_uniqueness": true,
+      "rung": "R0"
+    },
+    {
+      "counts": {
+        "UNIDENTIFIED": 20
+      },
+      "description": "closure of the candidate universe no longer required",
+      "identified_or_available": 0,
+      "per_decision": {
+        "CMP-001": "UNIDENTIFIED",
+        "CMP-002": "UNIDENTIFIED",
+        "CMP-003": "UNIDENTIFIED",
+        "CMP-004": "UNIDENTIFIED",
+        "CMP-006": "UNIDENTIFIED",
+        "CMP-007": "UNIDENTIFIED",
+        "CMP-008": "UNIDENTIFIED",
+        "CMP-009": "UNIDENTIFIED",
+        "CMP-010": "UNIDENTIFIED",
+        "CMP-011": "UNIDENTIFIED",
+        "CMP-012": "UNIDENTIFIED",
+        "CMP-013": "UNIDENTIFIED",
+        "CMP-018": "UNIDENTIFIED",
+        "CMP-019": "UNIDENTIFIED",
+        "CMP-021": "UNIDENTIFIED",
+        "CMP-022": "UNIDENTIFIED",
+        "CMP-024": "UNIDENTIFIED",
+        "CMP-034": "UNIDENTIFIED",
+        "CMP-035": "UNIDENTIFIED",
+        "CMP-041": "UNIDENTIFIED"
+      },
+      "requires": [
+        "release_set",
+        "run_output_set",
+        "evaluator_and_configuration",
+        "task_universe",
+        "aggregation_rule"
+      ],
+      "requires_closed_universe": false,
+      "requires_uniqueness": true,
+      "rung": "R1"
+    },
+    {
+      "counts": {
+        "UNIDENTIFIED": 20
+      },
+      "description": "and an aggregation rule no longer required",
+      "identified_or_available": 0,
+      "per_decision": {
+        "CMP-001": "UNIDENTIFIED",
+        "CMP-002": "UNIDENTIFIED",
+        "CMP-003": "UNIDENTIFIED",
+        "CMP-004": "UNIDENTIFIED",
+        "CMP-006": "UNIDENTIFIED",
+        "CMP-007": "UNIDENTIFIED",
+        "CMP-008": "UNIDENTIFIED",
+        "CMP-009": "UNIDENTIFIED",
+        "CMP-010": "UNIDENTIFIED",
+        "CMP-011": "UNIDENTIFIED",
+        "CMP-012": "UNIDENTIFIED",
+        "CMP-013": "UNIDENTIFIED",
+        "CMP-018": "UNIDENTIFIED",
+        "CMP-019": "UNIDENTIFIED",
+        "CMP-021": "UNIDENTIFIED",
+        "CMP-022": "UNIDENTIFIED",
+        "CMP-024": "UNIDENTIFIED",
+        "CMP-034": "UNIDENTIFIED",
+        "CMP-035": "UNIDENTIFIED",
+        "CMP-041": "UNIDENTIFIED"
+      },
+      "requires": [
+        "release_set",
+        "run_output_set",
+        "evaluator_and_configuration",
+        "task_universe"
+      ],
+      "requires_closed_universe": false,
+      "requires_uniqueness": true,
+      "rung": "R2"
+    },
+    {
+      "counts": {
+        "NOT_UNIQUE": 1,
+        "UNIDENTIFIED": 19
+      },
+      "description": "and an evaluator and configuration no longer required",
+      "identified_or_available": 0,
+      "per_decision": {
+        "CMP-001": "UNIDENTIFIED",
+        "CMP-002": "UNIDENTIFIED",
+        "CMP-003": "UNIDENTIFIED",
+        "CMP-004": "UNIDENTIFIED",
+        "CMP-006": "UNIDENTIFIED",
+        "CMP-007": "UNIDENTIFIED",
+        "CMP-008": "UNIDENTIFIED",
+        "CMP-009": "UNIDENTIFIED",
+        "CMP-010": "UNIDENTIFIED",
+        "CMP-011": "UNIDENTIFIED",
+        "CMP-012": "UNIDENTIFIED",
+        "CMP-013": "UNIDENTIFIED",
+        "CMP-018": "UNIDENTIFIED",
+        "CMP-019": "UNIDENTIFIED",
+        "CMP-021": "UNIDENTIFIED",
+        "CMP-022": "UNIDENTIFIED",
+        "CMP-024": "UNIDENTIFIED",
+        "CMP-034": "NOT_UNIQUE",
+        "CMP-035": "UNIDENTIFIED",
+        "CMP-041": "UNIDENTIFIED"
+      },
+      "requires": [
+        "release_set",
+        "run_output_set",
+        "task_universe"
+      ],
+      "requires_closed_universe": false,
+      "requires_uniqueness": true,
+      "rung": "R3"
+    },
+    {
+      "counts": {
+        "NOT_UNIQUE": 3,
+        "UNIDENTIFIED": 17
+      },
+      "description": "and a release set no longer required",
+      "identified_or_available": 0,
+      "per_decision": {
+        "CMP-001": "UNIDENTIFIED",
+        "CMP-002": "UNIDENTIFIED",
+        "CMP-003": "UNIDENTIFIED",
+        "CMP-004": "UNIDENTIFIED",
+        "CMP-006": "UNIDENTIFIED",
+        "CMP-007": "UNIDENTIFIED",
+        "CMP-008": "UNIDENTIFIED",
+        "CMP-009": "UNIDENTIFIED",
+        "CMP-010": "UNIDENTIFIED",
+        "CMP-011": "UNIDENTIFIED",
+        "CMP-012": "NOT_UNIQUE",
+        "CMP-013": "NOT_UNIQUE",
+        "CMP-018": "UNIDENTIFIED",
+        "CMP-019": "UNIDENTIFIED",
+        "CMP-021": "UNIDENTIFIED",
+        "CMP-022": "UNIDENTIFIED",
+        "CMP-024": "UNIDENTIFIED",
+        "CMP-034": "NOT_UNIQUE",
+        "CMP-035": "UNIDENTIFIED",
+        "CMP-041": "UNIDENTIFIED"
+      },
+      "requires": [
+        "run_output_set",
+        "task_universe"
+      ],
+      "requires_closed_universe": false,
+      "requires_uniqueness": true,
+      "rung": "R4"
+    },
+    {
+      "counts": {
+        "UNIDENTIFIED": 20
+      },
+      "description": "separate availability comparator: all components restored, uniqueness not required",
+      "identified_or_available": 0,
+      "per_decision": {
+        "CMP-001": "UNIDENTIFIED",
+        "CMP-002": "UNIDENTIFIED",
+        "CMP-003": "UNIDENTIFIED",
+        "CMP-004": "UNIDENTIFIED",
+        "CMP-006": "UNIDENTIFIED",
+        "CMP-007": "UNIDENTIFIED",
+        "CMP-008": "UNIDENTIFIED",
+        "CMP-009": "UNIDENTIFIED",
+        "CMP-010": "UNIDENTIFIED",
+        "CMP-011": "UNIDENTIFIED",
+        "CMP-012": "UNIDENTIFIED",
+        "CMP-013": "UNIDENTIFIED",
+        "CMP-018": "UNIDENTIFIED",
+        "CMP-019": "UNIDENTIFIED",
+        "CMP-021": "UNIDENTIFIED",
+        "CMP-022": "UNIDENTIFIED",
+        "CMP-024": "UNIDENTIFIED",
+        "CMP-034": "UNIDENTIFIED",
+        "CMP-035": "UNIDENTIFIED",
+        "CMP-041": "UNIDENTIFIED"
+      },
+      "requires": [
+        "release_set",
+        "run_output_set",
+        "evaluator_and_configuration",
+        "task_universe",
+        "aggregation_rule"
+      ],
+      "requires_closed_universe": false,
+      "requires_uniqueness": false,
+      "rung": "R5"
+    }
+  ],
+  "schema": "sensitivity-ladder.v2",
+  "scientific_claims": true,
+  "verdicts_sha256": "000e078994c73940172338f8b56598e7d086a9312124f7837260521b6e908c60"
+}

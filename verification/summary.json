@@ -1,0 +1,56 @@
+{
+  "source_commit": "087391705a0d665e95a24711210cfee8c88e52b6",
+  "source_files_hash_verified": 37,
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "tools/joint_identifiability.py",
+        "--verdicts",
+        "docs/paper-a/identifiability-verdicts-v2.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "tools/sensitivity_ladder.py",
+        "--out",
+        "verification/sensitivity-ladder.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python3",
+        "tools/crosswalk_ledger.py",
+        "--out",
+        "verification/identifiability-crosswalk.json"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "recorded_json_comparisons": [
+    {
+      "generated": "sensitivity-ladder.json",
+      "saved": "sensitivity-ladder-v2.json",
+      "json_equal": true,
+      "differing_top_level_keys": [],
+      "substantive_payload_equal": true,
+      "generated_protocol_sha256": "b594f7e8ca919972daff33f2a307c6687641655da6ae1bacf6479a6b18fade68",
+      "saved_protocol_sha256": "b594f7e8ca919972daff33f2a307c6687641655da6ae1bacf6479a6b18fade68"
+    },
+    {
+      "generated": "identifiability-crosswalk.json",
+      "saved": "identifiability-crosswalk-v2.json",
+      "json_equal": true,
+      "differing_top_level_keys": [],
+      "substantive_payload_equal": true,
+      "generated_protocol_sha256": "b594f7e8ca919972daff33f2a307c6687641655da6ae1bacf6479a6b18fade68",
+      "saved_protocol_sha256": "b594f7e8ca919972daff33f2a307c6687641655da6ae1bacf6479a6b18fade68"
+    }
+  ],
+  "pytest_exit_code": 0,
+  "pytest_summary": "57 passed in 0.19s",
+  "scope": "saved-record offline checks and focused regression tests; no agent execution, upstream reacquisition or independent scientific adjudication"
+}

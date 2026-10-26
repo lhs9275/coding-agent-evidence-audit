@@ -1,0 +1,328 @@
+{
+  "count": 47,
+  "decision": "The study corpus is the 47 double-judged studies listed here.",
+  "document_id": "CORPUS-FROZEN-V3",
+  "axis_disagreement_audit": {
+    "first_axis_out_of_scope_second_axis_in_scope": 2,
+    "measured_on": "20 blinded records drawn from the first axis's OUT_OF_SCOPE bucket",
+    "note": "This is observed directional disagreement, not a false-negative rate: neither axis supplies gold labels. It is not extrapolated to the 463 first-axis OUT_OF_SCOPE records; seven of those later moved to UNRESOLVED under symmetric assembly. The RESERVE split received neither axis."
+  },
+  "provenance": {
+    "deviations": "docs/paper-a/corpus-rederivation-deviations-v1.md",
+    "judged": 929,
+    "pool": 27921,
+    "tools": [
+      "corpus_search.py",
+      "screen_stage1.py",
+      "fetch_abstracts.py",
+      "screen_stage2.py",
+      "run_judge_axis.py",
+      "decide_c1.py",
+      "resolve_siblings.py",
+      "assemble_corpus.py"
+    ]
+  },
+  "schema": "rq1-corpus-frozen.v3",
+  "scientific_claims": false,
+  "status": "FROZEN",
+  "studies": [
+    {
+      "doi": "10.18653/v1/2025.acl-long.189",
+      "title": "UTBoost: Rigorous Evaluation of Coding Agents on SWE-Bench",
+      "venue": "ACL",
+      "year": 2025
+    },
+    {
+      "doi": "10.1145/3650212.3680384",
+      "title": "AutoCodeRover: Autonomous Program Improvement",
+      "venue": "ISSTA",
+      "year": 2024
+    },
+    {
+      "doi": "10.1109/icse-companion66252.2025.00075",
+      "title": "Revisiting SWE-Bench: On the Importance of Data Quality for LLM-Based Code Models",
+      "venue": "ICSE Companion",
+      "year": 2025
+    },
+    {
+      "doi": "10.1145/3715754",
+      "title": "Demystifying LLM-Based Software Engineering Agents",
+      "venue": "Proceedings of the ACM on software engineering.",
+      "year": 2025
+    },
+    {
+      "doi": "10.1109/icse-seip66354.2025.00038",
+      "title": "Evaluating Agent-Based Program Repair at Google",
+      "venue": "SEIP@ICSE",
+      "year": 2025
+    },
+    {
+      "doi": "10.48550/arxiv.2506.07636",
+      "title": "SWE-Dev: Building Software Engineering Agents with Training and Inference Scaling",
+      "venue": "ACL",
+      "year": 2025
+    },
+    {
+      "doi": "10.48550/arxiv.2410.12468",
+      "title": "Evaluating Software Development Agents: Patch Patterns, Code Quality, and Issue Complexity in Real-World GitHub Scenarios",
+      "venue": "SANER",
+      "year": 2024
+    },
+    {
+      "doi": "10.1145/3770581",
+      "title": "Integrating Various Software Artifacts for Better LLM-based Bug Localization and Program Repair",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "year": 2025
+    },
+    {
+      "doi": "10.1145/3808181",
+      "title": "ExpeRepair: Dual-Memory Enhanced LLM-Based Repository-Level Program Repair",
+      "venue": "Proceedings of the ACM on software engineering.",
+      "year": 2026
+    },
+    {
+      "doi": null,
+      "title": "MCTS-Refined CoT: High-Quality Fine-Tuning Data for LLM-Based Repository Issue Resolution",
+      "venue": "ASE",
+      "year": 2025
+    },
+    {
+      "doi": "10.18653/v1/2026.findings-acl.1652",
+      "title": "EET: Experience-Driven Early Termination for Cost-Efficient Software Engineering Agents",
+      "venue": "ACL",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3818617",
+      "title": "SGAgent: Suggestion-Guided LLM-Based Multi-Agent Framework for Repository-Level Software Repair",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3822603",
+      "title": "Confidence vs. Competence: Misalignment in Judgment and Performance for Agentic Software Repair",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "year": 2026
+    },
+    {
+      "doi": "10.1109/access.2026.3695435",
+      "title": "SE-Blackboard: A Shared-State Architecture for Multi-Agent Software Engineering Pipelines",
+      "venue": "IEEE Access",
+      "year": 2026
+    },
+    {
+      "doi": "10.48448/k8mg-8q47",
+      "title": "SWE-MERA: A Dynamic Benchmark for Agenticly Evaluating Large Language Models on Software Engineering Tasks",
+      "venue": "EMNLP",
+      "year": 2025
+    },
+    {
+      "doi": "10.48550/arxiv.2512.09543",
+      "title": "SWEnergy: An Empirical Study on Energy Efficiency in Agentic Issue Resolution Frameworks with SLMs",
+      "venue": "AGENT@ICSE",
+      "year": 2025
+    },
+    {
+      "doi": "10.1145/3696630.3728618",
+      "title": "AutoReview: An LLM-based Multi-Agent System for Security Issue-Oriented Code Review",
+      "venue": "SIGSOFT FSE Companion",
+      "year": 2025
+    },
+    {
+      "doi": "10.1109/icse55347.2025.00157",
+      "title": "RepairAgent: An Autonomous, LLM-Based Agent for Program Repair",
+      "venue": "ICSE",
+      "year": 2025
+    },
+    {
+      "doi": "10.1145/3817119",
+      "title": "ProjectEvalPlus: An Agentic Software Engineering Benchmark with Automatic Language Extension and User Simulated Evaluation",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "year": 2026
+    },
+    {
+      "doi": "10.64751/ijdim.2026.v5.n2.pp68-81",
+      "title": "Autonomous Patch Generation for Vulnerabilities Detected by Static Application Security Testing using LLMs",
+      "venue": "International Journal of Data Science and IoT Management System",
+      "year": 2026
+    },
+    {
+      "doi": "10.52202/079017-1601",
+      "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+      "venue": "Advances in Neural Information Processing Systems 37",
+      "year": 2024
+    },
+    {
+      "doi": "10.52202/085713-3239",
+      "title": "SWE-smith: Scaling Data for Software Engineering Agents",
+      "venue": "Advances in Neural Information Processing Systems 38",
+      "year": 2025
+    },
+    {
+      "doi": "10.52202/085713-0788",
+      "title": "SWE-rebench: An Automated Pipeline for Task Collection and Decontaminated Evaluation of Software Engineering Agents",
+      "venue": "Advances in Neural Information Processing Systems 38",
+      "year": 2025
+    },
+    {
+      "doi": "10.52202/079017-2601",
+      "title": "SWT-Bench: Testing and Validating Real-World Bug-Fixes with Code Agents",
+      "venue": "Advances in Neural Information Processing Systems 37",
+      "year": 2024
+    },
+    {
+      "doi": "10.1145/3793302.3793583",
+      "title": "Analyzing Message-Code Inconsistency in AI Coding Agent-Authored Pull Requests",
+      "venue": "Proceedings of the 23rd International Conference on Mining Software Repositories",
+      "year": 2026
+    },
+    {
+      "doi": "10.18653/v1/2025.realm-1.30",
+      "title": "From Knowledge to Noise: CTIM-Rover and the Pitfalls of Episodic Memory in Software Engineering Agents",
+      "venue": "Proceedings of the 1st Workshop for Research on Agent Language Models (REALM 2025)",
+      "year": 2025
+    },
+    {
+      "doi": "10.1145/3803437.3806428",
+      "title": "TestAgent: A Multi-Agent LLM Framework for Repository-Level Unit Test Generation",
+      "venue": "Proceedings of the 34th ACM International Conference on the Foundations of Software Engineering",
+      "year": 2026
+    },
+    {
+      "doi": "10.1109/ase63991.2025.00234",
+      "title": "Understanding Software Engineering Agents: A Study of Thought-Action-Result Trajectories",
+      "venue": "2025 40th IEEE/ACM International Conference on Automated Software Engineering (ASE)",
+      "year": 2025
+    },
+    {
+      "doi": "10.52202/079017-1647",
+      "title": "MAGIS: LLM-Based Multi-Agent Framework for GitHub Issue Resolution",
+      "venue": "Advances in Neural Information Processing Systems 37",
+      "year": 2024
+    },
+    {
+      "doi": "10.1145/3786335.3813187",
+      "title": "From Bug Report to Pull Request: An Autonomous Agent Pipeline for Production Issue Resolution",
+      "venue": "Proceedings of the ACM Conference on AI and Agentic Systems",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3831589",
+      "title": "Measure Twice, Locate Once: Mitigating Hallucinations in LLM-based Agents for Repository-Scale Fault Localization",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3803437.3805237",
+      "title": "Dynamic Cogeneration of Bug Reproduction Test in Agentic Program Repair",
+      "venue": "Proceedings of the 34th ACM International Conference on the Foundations of Software Engineering",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3793302.3793604",
+      "title": "An Empirical Study of Tests in Agentic Pull Requests",
+      "venue": "Proceedings of the 23rd International Conference on Mining Software Repositories",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3798166",
+      "title": "On the Use of Agentic Coding: An Empirical Study of Pull Requests on GitHub",
+      "venue": "ACM Transactions on Software Engineering and Methodology",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3793302.3793586",
+      "title": "Behind Agentic Pull Requests: An Empirical Study on Developer Interventions in AI Agent-Authored Pull Requests",
+      "venue": "Proceedings of the 23rd International Conference on Mining Software Repositories",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3793302.3793567",
+      "title": "Let's Make Every Pull Request Meaningful: An Empirical Analysis of Developer and Agentic Pull Requests",
+      "venue": "Proceedings of the 23rd International Conference on Mining Software Repositories",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3793302.3793579",
+      "title": "Where Do AI Coding Agents Fail? An Empirical Study of Failed Agentic Pull Requests in GitHub",
+      "venue": "Proceedings of the 23rd International Conference on Mining Software Repositories",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3786583.3786858",
+      "title": "Abstain and Validate: A Dual-LLM Policy for Reducing Noise in Agentic Program Repair",
+      "venue": "Proceedings of the IEEE/ACM 48th International Conference on Software Engineering: Software Engineering in Practice",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3793302.3793575",
+      "title": "Why Are Agentic Pull Requests Merged or Rejected? An Empirical Study",
+      "venue": "Proceedings of the 23rd International Conference on Mining Software Repositories",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3793302.3793594",
+      "title": "How Do Agentic AI Systems Deal With Software Energy Concerns? A Pull Request-Based Study",
+      "venue": "Proceedings of the 23rd International Conference on Mining Software Repositories",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3793302.3793601",
+      "title": "Toward Instructions-as-Code: Understanding the Impact of Instruction Files on Agentic Pull Requests",
+      "venue": "Proceedings of the 23rd International Conference on Mining Software Repositories",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3793302.3793570",
+      "title": "Bug-Fixing in the Age of AI: Human vs. Agentic Pull Requests",
+      "venue": "Proceedings of the 23rd International Conference on Mining Software Repositories",
+      "year": 2026
+    },
+    {
+      "doi": "10.1145/3793302.3793565",
+      "title": "Code Change Characteristics and Description Alignment: A Comparative Study of Agentic versus Human Pull Requests",
+      "venue": "Proceedings of the 23rd International Conference on Mining Software Repositories",
+      "year": 2026
+    },
+    {
+      "doi": null,
+      "title": "Training Software Engineering Agents and Verifiers with SWE-Gym",
+      "venue": "ICML",
+      "year": 2024
+    },
+    {
+      "doi": "10.48550/arxiv.2408.07060",
+      "title": "Diversity Empowers Intelligence: Integrating Expertise of Software Engineering Agents",
+      "venue": "ICLR",
+      "year": 2024
+    },
+    {
+      "doi": null,
+      "title": "PatchPilot: A Cost-Efficient Software Engineering Agent with Early Attempts on Formal Verification",
+      "venue": "ICML",
+      "year": 2025
+    },
+    {
+      "doi": "10.48550/arxiv.2505.13652",
+      "title": "Guided Search Strategies in Non-Serializable Environments with Applications to Software Engineering Agents",
+      "venue": "ICML",
+      "year": 2025
+    }
+  ],
+  "supersedes": "CORPUS-FROZEN-V2; the 47-study roster is unchanged, while the disagreement interpretation and symmetric unresolved counts are corrected",
+  "dispositions_outside_roster": {
+    "IN_SCOPE_NOT_PEER_REVIEWED": {
+      "count": 66,
+      "reason": "In scope, but no peer-reviewed record was found. CONTEXTUAL under the frozen rule, never confirmatory."
+    },
+    "RESERVE_split": {
+      "count": 2390,
+      "reason": "Set aside by the precision layer inside the two judgeable buckets before the main screen. A separate seeded audit of 100 records found four in scope and no peer-reviewed record; this is not a population-completeness estimate."
+    },
+    "UNRESOLVED": {
+      "count": 214,
+      "reason": "Not adjudicated. There are 237 unresolved rows before title deduplication. Most are records at least one axis called UNCERTAIN, and 239 of the 929 judged records had no abstract retrieved. Fifteen records in the audited comparison set received different axis labels. These are unresolved, not judged and rejected."
+    }
+  },
+  "what_this_is": "In scope on both model axes, with a peer-reviewed record established from metadata or recovered by sibling resolution. Independence applies only to the 58-row blinded comparison batch; 19 sibling-promoted rows were double-judged but not blinded. It is a floor, not a census."
+}
